@@ -1,0 +1,1 @@
+#execute as @e[type=creeper,tag!=spawned,distance=..50]
