@@ -1,4 +1,4 @@
-execute as @a run function custnats:biome/biomecheck
+execute as @a at @s run function custnats:biome/biomecheck
 schedule function custnats:biom/sched 20t
 
 
