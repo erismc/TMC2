@@ -1,6 +1,6 @@
 {
 	"pack": {
-		"pack_format": 5,
-		"description": "Datapack Template"
+		"pack_format": 6,
+		"description": "Moleman's datapack for optionally flattening block drops in an area to a single blocktype"
 	}
 }
