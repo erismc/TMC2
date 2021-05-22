@@ -1,0 +1,10 @@
+{
+    "rewards": {
+      "function": "cust_items:inv_search"
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:inventory_changed"
+      }
+    }
+  }

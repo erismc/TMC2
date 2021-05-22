@@ -1,4 +1,4 @@
-say moleman is data idiot
+#initialise scores
 scoreboard objectives add invmole dummy
 scoreboard objectives add molehand dummy
 scoreboard objectives add offmole dummy
