@@ -10,5 +10,5 @@ function custitems:inv_recursive
 data modify storage inv:main inv.all set from storage mole:search inv
 
 
-# reloads inventory
-function inv:load
+# reloads inventory (only required if any items have been edited whilst in storage)
+# function inv:load

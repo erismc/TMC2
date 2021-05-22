@@ -11,7 +11,7 @@ execute if score @s feetmole matches 0 if score @s legsmole matches 0 if score @
 
 
 # check temp storage for value of moleman tag and saves that to a score (for checking "when carried" items)
-execute store result score @s invmole run data get storage mole:search temp.tag.moleman
+execute store result score @s invmole run data get storage mole:search temp.tag.invmole
 
 
 # executes item functions based on relevant score (eg. when carried, in offhand, on feet, etc)
