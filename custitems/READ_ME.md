@@ -1,10 +1,10 @@
-Custom items tracker for MC 1.16.5
+**Custom items tracker for MC 1.16.5
 
 =====================================
 
 NOTE: This datapack requires Ts' inventory manipulation datapack to work.
 
-=====================================
+=====================================**
 
 Tests for items in the inventory, in the offhand, in the mainhand and in each armour slot.
 Avoids using nbt= checks to improve performance.
