@@ -1,0 +1,3 @@
+say enabling blockswap ...
+
+advancement revoke @s only settings:blockswap_enable

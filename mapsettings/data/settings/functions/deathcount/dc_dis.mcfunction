@@ -1,0 +1,3 @@
+say disabling deathcounter ...
+
+advancement revoke @s only settings:deathcount_disable
