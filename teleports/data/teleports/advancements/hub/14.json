@@ -5,12 +5,12 @@
         "conditions": {
           "entity": {
             "type": "minecraft:sheep",
-            "nbt": "{Tags:[\"tpsheep\"]}"
+            "nbt": "{Tags:[\"hub_14\"]}"
           }
         }
       }
     },
     "rewards": {
-      "function": "teleports:tp_in"
+      "function": "teleports:stations/hub/14"
     }
   }
