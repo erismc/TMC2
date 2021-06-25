@@ -43,3 +43,5 @@ execute if score $prng prngone matches 17.. unless score $prng prngone matches 2
 execute if score $prng prngone matches 17.. unless score $prng prngone matches 32..41 positioned 212.0 128.5 -49.0 if entity @a[distance=..13] run function settings:cw/particles
 execute if score $prng prngone matches 7.. unless score $prng prngone matches 15..25 positioned 213.0 128.5 -49.0 if entity @a[distance=..13] run function settings:cw/particles
 execute if score $prng prngone matches ..39 unless score $prng prngone matches 11..19 positioned 212.5 130.1 -48.5 if entity @a[distance=..7] run function settings:cw/particles
+execute if score $prng prngone matches 15.. unless score $prng prngone matches 25..39 positioned 213.0 128.5 -49.0 as @a[distance=..9] run playsound minecraft:block.portal.ambient ambient @s ~ ~ ~ 0.3 0.5
+execute if score $prng prngone matches 0..10 unless score $prng prngone matches 25..39 positioned 213.0 128.5 -49.0 as @a[distance=..9] run playsound minecraft:block.portal.ambient ambient @s ~ ~ ~ 0.5 2

@@ -1,6 +1,4 @@
 execute as @a at @s run function custnats:biome/biomecheck
-schedule function custnats:biom/sched 20t
-
-
-# store difficulty in this function also?
-#
+function custnats:biome/weather
+function custnats:biome/time
+schedule function custnats:biome/sched 30t

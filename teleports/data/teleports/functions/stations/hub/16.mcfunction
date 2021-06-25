@@ -1,4 +1,6 @@
-tp @s -846.5 150 -1546.5 -140 0
+scoreboard players set @s tptrack 16
 function teleports:activ_effects
+function teleports:stations/hub/escape
+
 
 advancement revoke @s only teleports:hub/16
