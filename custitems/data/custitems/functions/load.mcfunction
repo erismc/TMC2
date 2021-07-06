@@ -1,8 +1,19 @@
-#initialise scores
-scoreboard objectives add invmole dummy
-scoreboard objectives add molehand dummy
-scoreboard objectives add offmole dummy
-scoreboard objectives add feetmole dummy
-scoreboard objectives add legsmole dummy
-scoreboard objectives add chestmole dummy
-scoreboard objectives add headmole dummy
+# WE NEED TO CREEPER
+say Moleman is custom item idiot
+
+scoreboard objectives add helmtrack dummy
+scoreboard objectives add chesttrack dummy
+scoreboard objectives add legstrack dummy
+scoreboard objectives add feettrack dummy
+scoreboard objectives add mhtrack dummy
+scoreboard objectives add ohtrack dummy
+
+scoreboard objectives add bow_draw dummy
+scoreboard objectives add bow_shot dummy
+scoreboard objectives add bow_charge dummy
+
+scoreboard objectives add operator dummy
+
+
+
+

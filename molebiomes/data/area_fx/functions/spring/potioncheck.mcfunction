@@ -1,3 +1,5 @@
+# say checking potion
+
 data modify storage mole:man pot set value []
 data modify storage mole:man pot set from entity @s
 

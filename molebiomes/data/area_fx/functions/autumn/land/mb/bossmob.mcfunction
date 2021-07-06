@@ -1,5 +1,5 @@
 scoreboard players set $thunder thundermole 1
-schedule function testpack:bbcooldown 300s
+schedule function area_fx:autumn/land/mb/bbcooldown 300s
 say beginning bossfight
 
 playsound minecraft:music_disc.mellohi music @a[distance=..40] ~ ~ ~ 1 1.8

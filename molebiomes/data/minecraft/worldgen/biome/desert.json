@@ -23,7 +23,7 @@
     "creature": [],
     "monster": [
       {
-        "type": "minecraft:creeper",
+        "type": "minecraft:pillager",
         "weight": 100,
         "minCount": 1,
         "maxCount": 3
@@ -31,7 +31,7 @@
     ]
   },
   "spawn_costs": {
-    "minecraft:creeper": {
+    "minecraft:pillager": {
       "energy_budget": 0.15,
       "charge": 0.5
     }

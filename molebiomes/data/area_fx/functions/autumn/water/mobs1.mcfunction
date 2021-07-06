@@ -1,3 +1,3 @@
+summon lightning_bolt ~ ~ ~
 
-
-scoreboard players add $prng prngtwo 21
+# scoreboard players remove $prng prngtwo 7
