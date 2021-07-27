@@ -1,5 +1,5 @@
 # WE NEED TO CREEPER
-say Moleman is custom item idiot
+# say Moleman is custom item idiot
 
 scoreboard objectives add helmtrack dummy
 scoreboard objectives add chesttrack dummy

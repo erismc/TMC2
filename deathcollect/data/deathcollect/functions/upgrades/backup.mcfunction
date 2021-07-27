@@ -1,0 +1,1 @@
+# add a function here to check the scores and give the player that tier of item. Not a function for normal play, but in case someone manages to lose their stuff it's a backup

@@ -1,6 +1,6 @@
 {
     "rewards": {
-      "function": "cust_items:tagcheck/invcheck"
+      "function": "custitems:tagcheck/invcheck"
     },
     "criteria": {
       "requirement": {

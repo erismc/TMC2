@@ -21,14 +21,7 @@
     "misc": [],
     "water_creature": [],
     "creature": [],
-    "monster": [
-      {
-        "type": "minecraft:creeper",
-        "weight": 100,
-        "minCount": 1,
-        "maxCount": 3
-      }
-    ]
+    "monster": []
   },
   "spawn_costs": {
     "minecraft:creeper": {

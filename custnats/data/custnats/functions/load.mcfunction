@@ -23,6 +23,11 @@ scoreboard objectives add cubehealth dummy
 scoreboard objectives add cubebiome dummy
 scoreboard objectives add operator dummy
 scoreboard objectives add tritrack dummy
+scoreboard objectives add hadesin dummy
+scoreboard objectives add voidtrack dummy
+scoreboard objectives add spawnerdelay dummy
+scoreboard objectives add mobderer minecraft.custom:minecraft.mob_kills 
+scoreboard objectives add spawnerbreak minecraft.broken:minecraft.spawner
 
 scoreboard players set $100 operator 100
 scoreboard players set $2 dividetwo 2

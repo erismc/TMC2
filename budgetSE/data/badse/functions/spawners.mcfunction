@@ -167,32 +167,32 @@ execute if block ~ ~ ~ spawner if entity @s[tag=spring_9] if block 28 2 9 spawne
 # summer #
 ##########
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_1] unless entity @s[tag=stop_it] if block 33 2 1 spawner run clone 33 2 1 33 2 1 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_1] if block 33 2 1 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 1 all run data modify block ~ ~ ~ {} merge from block 33 2 1
+execute if block ~ ~ ~ air if entity @s[tag=summer_1] unless entity @s[tag=stop_it] if block 33 2 1 spawner run clone 33 2 1 33 2 1 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_1] if block 33 2 1 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 1 all run data modify block ~ ~ ~ {} merge from block 33 2 1
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_2] unless entity @s[tag=stop_it] if block 33 2 2 spawner run clone 33 2 2 33 2 2 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_2] if block 33 2 2 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 2 all run data modify block ~ ~ ~ {} merge from block 33 2 2
+execute if block ~ ~ ~ air if entity @s[tag=summer_2] unless entity @s[tag=stop_it] if block 33 2 2 spawner run clone 33 2 2 33 2 2 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_2] if block 33 2 2 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 2 all run data modify block ~ ~ ~ {} merge from block 33 2 2
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_3] unless entity @s[tag=stop_it] if block 33 2 3 spawner run clone 33 2 3 33 2 3 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_3] if block 33 2 3 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 3 all run data modify block ~ ~ ~ {} merge from block 33 2 3
+execute if block ~ ~ ~ air if entity @s[tag=summer_3] unless entity @s[tag=stop_it] if block 33 2 3 spawner run clone 33 2 3 33 2 3 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_3] if block 33 2 3 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 3 all run data modify block ~ ~ ~ {} merge from block 33 2 3
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_4] unless entity @s[tag=stop_it] if block 33 2 4 spawner run clone 33 2 4 33 2 4 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_4] if block 33 2 4 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 4 all run data modify block ~ ~ ~ {} merge from block 33 2 4
+execute if block ~ ~ ~ air if entity @s[tag=summer_4] unless entity @s[tag=stop_it] if block 33 2 4 spawner run clone 33 2 4 33 2 4 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_4] if block 33 2 4 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 4 all run data modify block ~ ~ ~ {} merge from block 33 2 4
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_5] unless entity @s[tag=stop_it] if block 33 2 5 spawner run clone 33 2 5 33 2 5 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_5] if block 33 2 5 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 5 all run data modify block ~ ~ ~ {} merge from block 33 2 5
+execute if block ~ ~ ~ air if entity @s[tag=summer_5] unless entity @s[tag=stop_it] if block 33 2 5 spawner run clone 33 2 5 33 2 5 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_5] if block 33 2 5 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 5 all run data modify block ~ ~ ~ {} merge from block 33 2 5
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_6] unless entity @s[tag=stop_it] if block 33 2 6 spawner run clone 33 2 6 33 2 6 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_6] if block 33 2 6 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 6 all run data modify block ~ ~ ~ {} merge from block 33 2 6
+execute if block ~ ~ ~ air if entity @s[tag=summer_6] unless entity @s[tag=stop_it] if block 33 2 6 spawner run clone 33 2 6 33 2 6 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_6] if block 33 2 6 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 6 all run data modify block ~ ~ ~ {} merge from block 33 2 6
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_7] unless entity @s[tag=stop_it] if block 33 2 7 spawner run clone 33 2 7 33 2 7 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_7] if block 33 2 7 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 7 all run data modify block ~ ~ ~ {} merge from block 33 2 7
+execute if block ~ ~ ~ air if entity @s[tag=summer_7] unless entity @s[tag=stop_it] if block 33 2 7 spawner run clone 33 2 7 33 2 7 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_7] if block 33 2 7 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 7 all run data modify block ~ ~ ~ {} merge from block 33 2 7
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_8] unless entity @s[tag=stop_it] if block 33 2 8 spawner run clone 33 2 8 33 2 8 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_8] if block 33 2 8 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 8 all run data modify block ~ ~ ~ {} merge from block 33 2 8
+execute if block ~ ~ ~ air if entity @s[tag=summer_8] unless entity @s[tag=stop_it] if block 33 2 8 spawner run clone 33 2 8 33 2 8 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_8] if block 33 2 8 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 8 all run data modify block ~ ~ ~ {} merge from block 33 2 8
 
-# execute if block ~ ~ ~ air if entity @s[tag=summer_9] unless entity @s[tag=stop_it] if block 33 2 9 spawner run clone 33 2 9 33 2 9 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=summer_9] if block 33 2 9 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 9 all run data modify block ~ ~ ~ {} merge from block 33 2 9
+execute if block ~ ~ ~ air if entity @s[tag=summer_9] unless entity @s[tag=stop_it] if block 33 2 9 spawner run clone 33 2 9 33 2 9 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=summer_9] if block 33 2 9 spawner unless blocks ~ ~ ~ ~ ~ ~ 33 2 9 all run data modify block ~ ~ ~ {} merge from block 33 2 9
 
 
 
@@ -200,32 +200,32 @@ execute if block ~ ~ ~ spawner if entity @s[tag=spring_9] if block 28 2 9 spawne
 # autumn #
 ##########
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_1] unless entity @s[tag=stop_it] if block 38 2 1 spawner run clone 38 2 1 38 2 1 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_1] if block 38 2 1 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 1 all run data modify block ~ ~ ~ {} merge from block 38 2 1
+execute if block ~ ~ ~ air if entity @s[tag=autumn_1] unless entity @s[tag=stop_it] if block 38 2 1 spawner run clone 38 2 1 38 2 1 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_1] if block 38 2 1 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 1 all run data modify block ~ ~ ~ {} merge from block 38 2 1
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_2] unless entity @s[tag=stop_it] if block 38 2 2 spawner run clone 38 2 2 38 2 2 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_2] if block 38 2 2 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 2 all run data modify block ~ ~ ~ {} merge from block 38 2 2
+execute if block ~ ~ ~ air if entity @s[tag=autumn_2] unless entity @s[tag=stop_it] if block 38 2 2 spawner run clone 38 2 2 38 2 2 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_2] if block 38 2 2 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 2 all run data modify block ~ ~ ~ {} merge from block 38 2 2
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_3] unless entity @s[tag=stop_it] if block 38 2 3 spawner run clone 38 2 3 38 2 3 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_3] if block 38 2 3 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 3 all run data modify block ~ ~ ~ {} merge from block 38 2 3
+execute if block ~ ~ ~ air if entity @s[tag=autumn_3] unless entity @s[tag=stop_it] if block 38 2 3 spawner run clone 38 2 3 38 2 3 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_3] if block 38 2 3 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 3 all run data modify block ~ ~ ~ {} merge from block 38 2 3
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_4] unless entity @s[tag=stop_it] if block 38 2 4 spawner run clone 38 2 4 38 2 4 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_4] if block 38 2 4 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 4 all run data modify block ~ ~ ~ {} merge from block 38 2 4
+execute if block ~ ~ ~ air if entity @s[tag=autumn_4] unless entity @s[tag=stop_it] if block 38 2 4 spawner run clone 38 2 4 38 2 4 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_4] if block 38 2 4 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 4 all run data modify block ~ ~ ~ {} merge from block 38 2 4
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_5] unless entity @s[tag=stop_it] if block 38 2 5 spawner run clone 38 2 5 38 2 5 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_5] if block 38 2 5 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 5 all run data modify block ~ ~ ~ {} merge from block 38 2 5
+execute if block ~ ~ ~ air if entity @s[tag=autumn_5] unless entity @s[tag=stop_it] if block 38 2 5 spawner run clone 38 2 5 38 2 5 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_5] if block 38 2 5 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 5 all run data modify block ~ ~ ~ {} merge from block 38 2 5
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_6] unless entity @s[tag=stop_it] if block 38 2 6 spawner run clone 38 2 6 38 2 6 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_6] if block 38 2 6 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 6 all run data modify block ~ ~ ~ {} merge from block 38 2 6
+execute if block ~ ~ ~ air if entity @s[tag=autumn_6] unless entity @s[tag=stop_it] if block 38 2 6 spawner run clone 38 2 6 38 2 6 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_6] if block 38 2 6 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 6 all run data modify block ~ ~ ~ {} merge from block 38 2 6
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_7] unless entity @s[tag=stop_it] if block 38 2 7 spawner run clone 38 2 7 38 2 7 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_7] if block 38 2 7 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 7 all run data modify block ~ ~ ~ {} merge from block 38 2 7
+execute if block ~ ~ ~ water if entity @s[tag=autumn_7] unless entity @s[tag=stop_it] if block 38 2 7 spawner run clone 38 2 7 38 2 7 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_7] if block 38 2 7 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 7 all run data modify block ~ ~ ~ {} merge from block 38 2 7
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_8] unless entity @s[tag=stop_it] if block 38 2 8 spawner run clone 38 2 8 38 2 8 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_8] if block 38 2 8 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 8 all run data modify block ~ ~ ~ {} merge from block 38 2 8
+execute if block ~ ~ ~ water if entity @s[tag=autumn_8] unless entity @s[tag=stop_it] if block 38 2 8 spawner run clone 38 2 8 38 2 8 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_8] if block 38 2 8 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 8 all run data modify block ~ ~ ~ {} merge from block 38 2 8
 
-# execute if block ~ ~ ~ air if entity @s[tag=autumn_9] unless entity @s[tag=stop_it] if block 38 2 9 spawner run clone 38 2 9 38 2 9 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=autumn_9] if block 38 2 9 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 9 all run data modify block ~ ~ ~ {} merge from block 38 2 9
+execute if block ~ ~ ~ air if entity @s[tag=autumn_9] unless entity @s[tag=stop_it] if block 38 2 9 spawner run clone 38 2 9 38 2 9 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=autumn_9] if block 38 2 9 spawner unless blocks ~ ~ ~ ~ ~ ~ 38 2 9 all run data modify block ~ ~ ~ {} merge from block 38 2 9
 
 
 
@@ -233,32 +233,32 @@ execute if block ~ ~ ~ spawner if entity @s[tag=spring_9] if block 28 2 9 spawne
 # winter #
 ##########
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_1] unless entity @s[tag=stop_it] if block 43 2 1 spawner run clone 43 2 1 43 2 1 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_1] if block 43 2 1 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 1 all run data modify block ~ ~ ~ {} merge from block 43 2 1
+execute if block ~ ~ ~ air if entity @s[tag=winter_1] unless entity @s[tag=stop_it] if block 43 2 1 spawner run clone 43 2 1 43 2 1 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_1] if block 43 2 1 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 1 all run data modify block ~ ~ ~ {} merge from block 43 2 1
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_2] unless entity @s[tag=stop_it] if block 43 2 2 spawner run clone 43 2 2 43 2 2 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_2] if block 43 2 2 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 2 all run data modify block ~ ~ ~ {} merge from block 43 2 2
+execute if block ~ ~ ~ air if entity @s[tag=winter_2] unless entity @s[tag=stop_it] if block 43 2 2 spawner run clone 43 2 2 43 2 2 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_2] if block 43 2 2 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 2 all run data modify block ~ ~ ~ {} merge from block 43 2 2
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_3] unless entity @s[tag=stop_it] if block 43 2 3 spawner run clone 43 2 3 43 2 3 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_3] if block 43 2 3 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 3 all run data modify block ~ ~ ~ {} merge from block 43 2 3
+execute if block ~ ~ ~ air if entity @s[tag=winter_3] unless entity @s[tag=stop_it] if block 43 2 3 spawner run clone 43 2 3 43 2 3 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_3] if block 43 2 3 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 3 all run data modify block ~ ~ ~ {} merge from block 43 2 3
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_4] unless entity @s[tag=stop_it] if block 43 2 4 spawner run clone 43 2 4 43 2 4 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_4] if block 43 2 4 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 4 all run data modify block ~ ~ ~ {} merge from block 43 2 4
+execute if block ~ ~ ~ air if entity @s[tag=winter_4] unless entity @s[tag=stop_it] if block 43 2 4 spawner run clone 43 2 4 43 2 4 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_4] if block 43 2 4 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 4 all run data modify block ~ ~ ~ {} merge from block 43 2 4
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_5] unless entity @s[tag=stop_it] if block 43 2 5 spawner run clone 43 2 5 43 2 5 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_5] if block 43 2 5 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 5 all run data modify block ~ ~ ~ {} merge from block 43 2 5
+execute if block ~ ~ ~ air if entity @s[tag=winter_5] unless entity @s[tag=stop_it] if block 43 2 5 spawner run clone 43 2 5 43 2 5 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_5] if block 43 2 5 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 5 all run data modify block ~ ~ ~ {} merge from block 43 2 5
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_6] unless entity @s[tag=stop_it] if block 43 2 6 spawner run clone 43 2 6 43 2 6 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_6] if block 43 2 6 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 6 all run data modify block ~ ~ ~ {} merge from block 43 2 6
+execute if block ~ ~ ~ air if entity @s[tag=winter_6] unless entity @s[tag=stop_it] if block 43 2 6 spawner run clone 43 2 6 43 2 6 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_6] if block 43 2 6 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 6 all run data modify block ~ ~ ~ {} merge from block 43 2 6
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_7] unless entity @s[tag=stop_it] if block 43 2 7 spawner run clone 43 2 7 43 2 7 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_7] if block 43 2 7 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 7 all run data modify block ~ ~ ~ {} merge from block 43 2 7
+execute if block ~ ~ ~ air if entity @s[tag=winter_7] unless entity @s[tag=stop_it] if block 43 2 7 spawner run clone 43 2 7 43 2 7 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_7] if block 43 2 7 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 7 all run data modify block ~ ~ ~ {} merge from block 43 2 7
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_8] unless entity @s[tag=stop_it] if block 43 2 8 spawner run clone 43 2 8 43 2 8 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_8] if block 43 2 8 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 8 all run data modify block ~ ~ ~ {} merge from block 43 2 8
+execute if block ~ ~ ~ air if entity @s[tag=winter_8] unless entity @s[tag=stop_it] if block 43 2 8 spawner run clone 43 2 8 43 2 8 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_8] if block 43 2 8 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 8 all run data modify block ~ ~ ~ {} merge from block 43 2 8
 
-# execute if block ~ ~ ~ air if entity @s[tag=winter_9] unless entity @s[tag=stop_it] if block 43 2 9 spawner run clone 43 2 9 43 2 9 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=winter_9] if block 43 2 9 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 9 all run data modify block ~ ~ ~ {} merge from block 43 2 9
+execute if block ~ ~ ~ air if entity @s[tag=winter_9] unless entity @s[tag=stop_it] if block 43 2 9 spawner run clone 43 2 9 43 2 9 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=winter_9] if block 43 2 9 spawner unless blocks ~ ~ ~ ~ ~ ~ 43 2 9 all run data modify block ~ ~ ~ {} merge from block 43 2 9
 
 
 
@@ -266,32 +266,32 @@ execute if block ~ ~ ~ spawner if entity @s[tag=spring_9] if block 28 2 9 spawne
 #  ash   #
 ##########
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_1] unless entity @s[tag=stop_it] if block 8 2 13 spawner run clone 8 2 13 8 2 13 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_1] if block 8 2 13 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 13 all run data modify block ~ ~ ~ {} merge from block 8 2 13
+execute if block ~ ~ ~ air if entity @s[tag=ash_1] unless entity @s[tag=stop_it] if block 8 2 13 spawner run clone 8 2 13 8 2 13 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_1] if block 8 2 13 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 13 all run data modify block ~ ~ ~ {} merge from block 8 2 13
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_2] unless entity @s[tag=stop_it] if block 8 2 14 spawner run clone 8 2 14 8 2 14 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_2] if block 8 2 14 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 14 all run data modify block ~ ~ ~ {} merge from block 8 2 14
+execute if block ~ ~ ~ air if entity @s[tag=ash_2] unless entity @s[tag=stop_it] if block 8 2 14 spawner run clone 8 2 14 8 2 14 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_2] if block 8 2 14 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 14 all run data modify block ~ ~ ~ {} merge from block 8 2 14
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_3] unless entity @s[tag=stop_it] if block 8 2 15 spawner run clone 8 2 15 8 2 15 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_3] if block 8 2 15 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 15 all run data modify block ~ ~ ~ {} merge from block 8 2 15
+execute if block ~ ~ ~ air if entity @s[tag=ash_3] unless entity @s[tag=stop_it] if block 8 2 15 spawner run clone 8 2 15 8 2 15 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_3] if block 8 2 15 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 15 all run data modify block ~ ~ ~ {} merge from block 8 2 15
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_4] unless entity @s[tag=stop_it] if block 8 2 16 spawner run clone 8 2 16 8 2 16 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_4] if block 8 2 16 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 16 all run data modify block ~ ~ ~ {} merge from block 8 2 16
+execute if block ~ ~ ~ air if entity @s[tag=ash_4] unless entity @s[tag=stop_it] if block 8 2 16 spawner run clone 8 2 16 8 2 16 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_4] if block 8 2 16 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 16 all run data modify block ~ ~ ~ {} merge from block 8 2 16
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_5] unless entity @s[tag=stop_it] if block 8 2 17 spawner run clone 8 2 17 8 2 17 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_5] if block 8 2 17 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 17 all run data modify block ~ ~ ~ {} merge from block 8 2 17
+execute if block ~ ~ ~ air if entity @s[tag=ash_5] unless entity @s[tag=stop_it] if block 8 2 17 spawner run clone 8 2 17 8 2 17 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_5] if block 8 2 17 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 17 all run data modify block ~ ~ ~ {} merge from block 8 2 17
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_6] unless entity @s[tag=stop_it] if block 8 2 18 spawner run clone 8 2 18 8 2 18 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_6] if block 8 2 18 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 18 all run data modify block ~ ~ ~ {} merge from block 8 2 18
+execute if block ~ ~ ~ air if entity @s[tag=ash_6] unless entity @s[tag=stop_it] if block 8 2 18 spawner run clone 8 2 18 8 2 18 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_6] if block 8 2 18 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 18 all run data modify block ~ ~ ~ {} merge from block 8 2 18
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_7] unless entity @s[tag=stop_it] if block 8 2 19 spawner run clone 8 2 19 8 2 19 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_7] if block 8 2 19 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 19 all run data modify block ~ ~ ~ {} merge from block 8 2 19
+execute if block ~ ~ ~ air if entity @s[tag=ash_7] unless entity @s[tag=stop_it] if block 8 2 19 spawner run clone 8 2 19 8 2 19 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_7] if block 8 2 19 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 19 all run data modify block ~ ~ ~ {} merge from block 8 2 19
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_8] unless entity @s[tag=stop_it] if block 8 2 20 spawner run clone 8 2 20 8 2 20 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_8] if block 8 2 20 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 20 all run data modify block ~ ~ ~ {} merge from block 8 2 20
+execute if block ~ ~ ~ air if entity @s[tag=ash_8] unless entity @s[tag=stop_it] if block 8 2 20 spawner run clone 8 2 20 8 2 20 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_8] if block 8 2 20 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 20 all run data modify block ~ ~ ~ {} merge from block 8 2 20
 
-# execute if block ~ ~ ~ air if entity @s[tag=ash_9] unless entity @s[tag=stop_it] if block 8 2 21 spawner run clone 8 2 21 8 2 21 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=ash_9] if block 8 2 21 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 21 all run data modify block ~ ~ ~ {} merge from block 8 2 21
+execute if block ~ ~ ~ air if entity @s[tag=ash_9] unless entity @s[tag=stop_it] if block 8 2 21 spawner run clone 8 2 21 8 2 21 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=ash_9] if block 8 2 21 spawner unless blocks ~ ~ ~ ~ ~ ~ 8 2 21 all run data modify block ~ ~ ~ {} merge from block 8 2 21
 
 
 
@@ -299,32 +299,32 @@ execute if block ~ ~ ~ spawner if entity @s[tag=spring_9] if block 28 2 9 spawne
 # penult #
 ##########
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_1] unless entity @s[tag=stop_it] if block 13 2 13 spawner run clone 13 2 13 13 2 13 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_1] if block 13 2 13 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 13 all run data modify block ~ ~ ~ {} merge from block 13 2 13
+execute if block ~ ~ ~ air if entity @s[tag=penult_1] unless entity @s[tag=stop_it] if block 13 2 13 spawner run clone 13 2 13 13 2 13 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_1] if block 13 2 13 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 13 all run data modify block ~ ~ ~ {} merge from block 13 2 13
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_2] unless entity @s[tag=stop_it] if block 13 2 14 spawner run clone 13 2 14 13 2 14 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_2] if block 13 2 14 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 14 all run data modify block ~ ~ ~ {} merge from block 13 2 14
+execute if block ~ ~ ~ air if entity @s[tag=penult_2] unless entity @s[tag=stop_it] if block 13 2 14 spawner run clone 13 2 14 13 2 14 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_2] if block 13 2 14 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 14 all run data modify block ~ ~ ~ {} merge from block 13 2 14
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_3] unless entity @s[tag=stop_it] if block 13 2 15 spawner run clone 13 2 15 13 2 15 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_3] if block 13 2 15 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 15 all run data modify block ~ ~ ~ {} merge from block 13 2 15
+execute if block ~ ~ ~ air if entity @s[tag=penult_3] unless entity @s[tag=stop_it] if block 13 2 15 spawner run clone 13 2 15 13 2 15 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_3] if block 13 2 15 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 15 all run data modify block ~ ~ ~ {} merge from block 13 2 15
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_4] unless entity @s[tag=stop_it] if block 13 2 16 spawner run clone 13 2 16 13 2 16 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_4] if block 13 2 16 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 16 all run data modify block ~ ~ ~ {} merge from block 13 2 16
+execute if block ~ ~ ~ air if entity @s[tag=penult_4] unless entity @s[tag=stop_it] if block 13 2 16 spawner run clone 13 2 16 13 2 16 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_4] if block 13 2 16 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 16 all run data modify block ~ ~ ~ {} merge from block 13 2 16
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_5] unless entity @s[tag=stop_it] if block 13 2 17 spawner run clone 13 2 17 13 2 17 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_5] if block 13 2 17 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 17 all run data modify block ~ ~ ~ {} merge from block 13 2 17
+execute if block ~ ~ ~ air if entity @s[tag=penult_5] unless entity @s[tag=stop_it] if block 13 2 17 spawner run clone 13 2 17 13 2 17 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_5] if block 13 2 17 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 17 all run data modify block ~ ~ ~ {} merge from block 13 2 17
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_6] unless entity @s[tag=stop_it] if block 13 2 113 spawner run clone 13 2 113 13 2 113 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_6] if block 13 2 113 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 113 all run data modify block ~ ~ ~ {} merge from block 13 2 18
+execute if block ~ ~ ~ air if entity @s[tag=penult_6] unless entity @s[tag=stop_it] if block 13 2 113 spawner run clone 13 2 113 13 2 113 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_6] if block 13 2 113 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 113 all run data modify block ~ ~ ~ {} merge from block 13 2 18
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_7] unless entity @s[tag=stop_it] if block 13 2 19 spawner run clone 13 2 19 13 2 19 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_7] if block 13 2 19 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 19 all run data modify block ~ ~ ~ {} merge from block 13 2 19
+execute if block ~ ~ ~ air if entity @s[tag=penult_7] unless entity @s[tag=stop_it] if block 13 2 19 spawner run clone 13 2 19 13 2 19 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_7] if block 13 2 19 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 19 all run data modify block ~ ~ ~ {} merge from block 13 2 19
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_8] unless entity @s[tag=stop_it] if block 13 2 20 spawner run clone 13 2 20 13 2 20 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_8] if block 13 2 20 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 20 all run data modify block ~ ~ ~ {} merge from block 13 2 20
+execute if block ~ ~ ~ air if entity @s[tag=penult_8] unless entity @s[tag=stop_it] if block 13 2 20 spawner run clone 13 2 20 13 2 20 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_8] if block 13 2 20 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 20 all run data modify block ~ ~ ~ {} merge from block 13 2 20
 
-# execute if block ~ ~ ~ air if entity @s[tag=penult_9] unless entity @s[tag=stop_it] if block 13 2 21 spawner run clone 13 2 21 13 2 21 ~ ~ ~ 
-# execute if block ~ ~ ~ spawner if entity @s[tag=penult_9] if block 13 2 21 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 21 all run data modify block ~ ~ ~ {} merge from block 13 2 21
+execute if block ~ ~ ~ air if entity @s[tag=penult_9] unless entity @s[tag=stop_it] if block 13 2 21 spawner run clone 13 2 21 13 2 21 ~ ~ ~ 
+execute if block ~ ~ ~ spawner if entity @s[tag=penult_9] if block 13 2 21 spawner unless blocks ~ ~ ~ ~ ~ ~ 13 2 21 all run data modify block ~ ~ ~ {} merge from block 13 2 21
 
 
 
