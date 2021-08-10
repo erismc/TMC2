@@ -1,5 +1,5 @@
 # WE NEED TO CREEPER
-say Moleman is deathcollect idiot
+# say Moleman is deathcollect idiot
 
 scoreboard objectives add deathtrack deathCount
 scoreboard objectives add lifetime minecraft.custom:minecraft.time_since_death

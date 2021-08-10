@@ -85,7 +85,7 @@ execute positioned 35.5 107 -1002.5 if entity @a[distance=..11] run scoreboard p
 execute positioned 35.5 107 -1002.5 if entity @a[distance=..11] if score $tphub tphub matches ..20 run scoreboard players set $tphub tphub 21
 
 
-
+execute as @a[tag=!upgrades_in,scores={up_points=1..}] run tag @s add upgrades_in
 
 
 schedule function teleports:sched 1s 

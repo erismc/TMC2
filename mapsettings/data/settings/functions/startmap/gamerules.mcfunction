@@ -1,0 +1,4 @@
+gamerule randomTickSpeed 3
+gamerule doFireTick true
+gamerule sendCommandFeedback false
+defaultgamemode survival

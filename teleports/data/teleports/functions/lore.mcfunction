@@ -20,5 +20,5 @@
 # execute if score @s tptrack matches 20 run
 # execute if score @s tptrack matches 21 run
 
-say what kind of idiot wants lore??
+say what kind of idiot wants lore?? play the final version if this is your vibe >:(
 advancement revoke @s only teleports:stations/lore

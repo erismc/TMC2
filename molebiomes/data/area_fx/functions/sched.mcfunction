@@ -1,7 +1,20 @@
 # you, an idiom: "Moleman, why don't you put the area functions in the order they appear in the map?"
 # me: why are you reading my function files you masochist
-scoreboard players set $creeper creeperbiome 0
-scoreboard players set $magma cubebiome 0
+
+# add score of 0 for tprack to new players
+# execute if score $start tptrack matches 1 as @a unless score @s tptrack matches 0.. run scoreboard players set @s tptrack 0
+
+
+
+# delete empty, invisible item frames every 4 ticks
+execute store result score $topo operator run scoreboard players get $prng prngone
+scoreboard players operation $topo operator %= $4 operator
+execute if score $topo operator matches 1 as @e[type=#area_fx:item_frames] unless data entity @s Item if data entity @s {Invisible:1b} run kill @s
+# could limit this to certain biomes if need be - probably not necessary though
+
+
+scoreboard players set $creeper biometrack 0
+scoreboard players set $magma biometrack 0
 scoreboard players set $trident biometrack 0
 
 
@@ -27,9 +40,10 @@ execute as @a unless score @s biometrack matches 10 if score @s heattrack matche
 
 # spring witches
 execute if entity @a[scores={biometrack=9}] as @e[type=potion] at @s if entity @e[distance=..3,type=witch,tag=molewitch] run function area_fx:spring/potioncheck
+execute if entity @a[scores={biometrack=17}] as @e[type=potion] at @s if entity @e[distance=..3,type=witch,tag=molewitch] run function area_fx:spring/potioncheck
 # spring evokers
 execute if entity @a[scores={biometrack=9}] positioned -355 134 -808 if entity @a[distance=..70] as @e[type=evoker,tag=springvoker] at @s run function area_fx:spring/evoker
-
+execute if entity @a[scores={biometrack=17}] as @e[type=evoker,tag=springvoker] at @s run function area_fx:spring/evoker
 
 
 
@@ -47,7 +61,7 @@ execute if score $intro ravagers matches 2 as @a[scores={biometrack=1}] at @s if
 # to reduce @e calls, this should only run in areas with specific creeper effects
 execute if entity @a[scores={biometrack=4..7}] run scoreboard players set $creeper biometrack 1
 execute if entity @a[scores={biometrack=10..12}] run scoreboard players set $creeper biometrack 1
-# execute if entity @a[scores={biometrack=7}] run scoreboard players set $creeper biometrack 1
+execute if entity @a[scores={biometrack=17}] run scoreboard players set $creeper biometrack 1
 execute if score $creeper biometrack matches 1 as @e[type=area_effect_cloud,tag=!bsmole,tag=!spawned,nbt={Particle:"minecraft:entity_effect"}] at @s run function area_fx:creepers/creeper_fx
 execute if score $prng prngfive matches 5 if score $creeper biometrack matches 1 as @e[type=creeper,tag=!spawned] at @s run function area_fx:creepers/particles
 execute if score $prng prngfive matches 15 if score $creeper biometrack matches 1 as @e[type=creeper,tag=!spawned] at @s run function area_fx:creepers/particles
@@ -65,12 +79,19 @@ execute if score $magma biometrack matches 1 as @e[type=magma_cube,tag=Cubes] at
 # drowneds that throw tridents slower than usual
 execute if entity @a[scores={biometrack=7}] run scoreboard players set $trident biometrack 1
 execute if entity @a[scores={biometrack=11..12}] run scoreboard players set $trident biometrack 1
+execute if entity @a[scores={biometrack=17}] run scoreboard players set $trident biometrack 1
 execute if score $trident biometrack matches 1 as @e[type=trident,tag=!Tested] at @s run function area_fx:drowned/toggler
 
 # prepares the boss area in the hades cathedral (reset these scores to zero in map-start function please!!)
 execute if score $prng prngfive matches 10 unless score $hades hadesin matches 1 if entity @a[scores={biometrack=8}] positioned -541 129 -278 if entity @a[gamemode=survival,distance=..60] run function area_fx:hades/cages/reload
 # opens the cages once the boss spawns
 execute unless score $boss hadesin matches 1 if entity @a[scores={biometrack=8}] positioned -521 131 -279 if entity @a[gamemode=survival,distance=..25] as @e[type=vindicator,tag=HadesBoss,distance=..10] at @s run function area_fx:hades/cages/open
+# hades keys
+execute if entity @a[scores={biometrack=8}] unless score $opened shrines matches 1 run forceload add -713 -233 -701 -210
+execute unless entity @a[scores={biometrack=8}] run forceload remove -713 -233 -701 -210
+execute unless score $door shrines matches 1 if entity @a[scores={biometrack=8}] run function area_fx:hades/shrines/keycheck
+execute if score $door shrines matches 1 unless score $opened shrines matches 1 positioned -727.0 108.5 -221.5 if entity @a[distance=..5] run function area_fx:hades/shrines/open
+
 
 
 # teleporting spawners and reduces levitation from shulkers
@@ -78,11 +99,30 @@ execute if entity @a[scores={biometrack=16}] as @e[type=marker,tag=tp_spawner] a
 execute as @a[scores={biometrack=16}] if predicate area_fx:levitation run function area_fx:penult/lev_swap
 
 
+
 # could add firework piglins to ash caves? maybe to purple section?
 execute if entity @a[scores={biometrack=13}] as @e[type=piglin,tag=firework] unless data entity @s HandItems[].tag.ChargedProjectiles.[].tag.Fireworks run data modify entity @s HandItems set value [{id: "minecraft:crossbow", Count: 1b, tag: {ChargedProjectiles: [{id: "minecraft:firework_rocket", Count: 1b, tag: {Fireworks: {Flight: 1b, Explosions: [{Type: 4, Colors: [I; 11933366]}]}}}, {}, {}], Damage: 0, Charged: 1b}}, {}]
 
 
 
-# scores to be set to 0 in mapstart:
-# $hades hadesin 0
-# $boss hadesin 0
+
+
+
+#jungle OOB
+execute if score $prng prngfour matches 12..14 unless score $prng prngfour matches 13 as @a[scores={biometrack=5},tag=informed] run effect give @s poison 1 2
+execute if score $prng prngfour matches 16 as @a[scores={biometrack=5},tag=!informed] run function area_fx:jungle/oob
+
+
+#finale reset
+execute if score $prng prngone matches 5 if entity @a[scores={biometrack=17}] run forceload add 53 -894 93 -926
+execute if score $prng prngone matches 15 unless entity @a[scores={biometrack=17}] run forceload remove 53 -894 93 -926
+execute if score $prng prngone matches 25 positioned -73.5 206 -910.5 unless score $reset finale matches 1 if entity @a[scores={biometrack=17}] if entity @a[distance=..110] unless entity @a[distance=..70] run function area_fx:finale/boss/floor_reset
+execute if score $prng prngone matches 25 positioned -73.5 206 -910.5 if score $reset finale matches 1 if entity @a[scores={biometrack=17}] unless entity @a[distance=50..110] run scoreboard players set $reset finale 0
+#finale wither water
+execute as @a[scores={biometrack=17}] at @s if block ~ ~1 ~ water run effect give @s wither 1 0
+
+#finale shulkers?
+
+
+# area entry titles
+execute if score $prng prngfive matches 7 as @a run function area_fx:titles/in

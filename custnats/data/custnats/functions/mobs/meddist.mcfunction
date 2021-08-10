@@ -15,6 +15,7 @@ execute if predicate custnats:icecity run function custnats:mobs/icecity/medium
 # execute if predicate custnats:iceboat run function custnats:mobs/iceboat/medium
 execute if predicate custnats:grayscale run function custnats:mobs/grayscale/medium
 execute if predicate custnats:penult run function custnats:mobs/penult/medium
+execute if entity @s[x=149,y=135,z=-696,dx=120,dy=120,dz=120] run function custnats:mobs/finale/remove
 execute if predicate custnats:finale run function custnats:mobs/finale/medium
 execute if predicate custnats:lobby run function custnats:mobs/lobby/medium
 execute if predicate custnats:intro run function custnats:mobs/intro/medium

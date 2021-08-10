@@ -26,11 +26,14 @@ scoreboard objectives add tritrack dummy
 scoreboard objectives add hadesin dummy
 scoreboard objectives add voidtrack dummy
 scoreboard objectives add spawnerdelay dummy
+scoreboard objectives add shrines dummy
+scoreboard objectives add finale dummy
 scoreboard objectives add mobderer minecraft.custom:minecraft.mob_kills 
 scoreboard objectives add spawnerbreak minecraft.broken:minecraft.spawner
 
 scoreboard players set $100 operator 100
 scoreboard players set $2 dividetwo 2
+scoreboard players set $4 operator 4
 
 execute unless score $creeper creeperfire matches 0..10 run scoreboard players set $creeper creeperfire 0
 
