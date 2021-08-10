@@ -1,3 +1,6 @@
+function upgrades:item_stations/sched
+
+
 # particles and sounds in station.mcfunction
 # jungle tree dungeon
 execute positioned -386.5 138 419.5 if entity @a[distance=..20] run function upgrades:points/station
