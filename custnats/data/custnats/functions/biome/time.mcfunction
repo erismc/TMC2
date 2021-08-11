@@ -19,6 +19,9 @@ execute if entity @a[scores={biometrack=12..15}] run scoreboard players set $tim
 #finale
 execute if entity @a[scores={biometrack=16..17}] run scoreboard players set $time timetrack 6
 
+#lobby
+execute if entity @a[scores={biometrack=18}] run scoreboard players set $time timetrack 7
+
 
 # set the time
 execute if score $time timetrack matches 1 unless score $time timecheck matches 22800 run time set 22800
@@ -27,4 +30,4 @@ execute if score $time timetrack matches 3 unless score $time timecheck matches 
 execute if score $time timetrack matches 4 unless score $time timecheck matches 13200 run time set 13200
 execute if score $time timetrack matches 5 unless score $time timecheck matches 15000 run time set 15000
 execute if score $time timetrack matches 6 unless score $time timecheck matches 18000 run time set 18000
-
+execute if score $time timetrack matches 7 unless score $time timecheck matches 2400 run time set 2400

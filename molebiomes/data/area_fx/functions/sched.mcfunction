@@ -16,6 +16,7 @@ execute if score $topo operator matches 1 as @e[type=#area_fx:item_frames] unles
 scoreboard players set $creeper biometrack 0
 scoreboard players set $magma biometrack 0
 scoreboard players set $trident biometrack 0
+scoreboard players set $clangers biometrack 0
 
 
 # greased lightning
@@ -100,24 +101,23 @@ execute as @a[scores={biometrack=16}] if predicate area_fx:levitation run functi
 
 
 
-# could add firework piglins to ash caves? maybe to purple section?
-execute if entity @a[scores={biometrack=13}] as @e[type=piglin,tag=firework] unless data entity @s HandItems[].tag.ChargedProjectiles.[].tag.Fireworks run data modify entity @s HandItems set value [{id: "minecraft:crossbow", Count: 1b, tag: {ChargedProjectiles: [{id: "minecraft:firework_rocket", Count: 1b, tag: {Fireworks: {Flight: 1b, Explosions: [{Type: 4, Colors: [I; 11933366]}]}}}, {}, {}], Damage: 0, Charged: 1b}}, {}]
-
-
-
-
+# firework piglins in ash caves
+execute if entity @a[scores={biometrack=14}] as @e[type=piglin,tag=firework] unless data entity @s HandItems[].tag.ChargedProjectiles.[].tag.Fireworks run data modify entity @s HandItems set value [{id: "minecraft:crossbow", Count: 1b, tag: {ChargedProjectiles: [{id: "minecraft:firework_rocket", Count: 1b, tag: {Fireworks: {Flight: 1b, Explosions: [{Type: 4, Colors: [I; 11933366]}]}}}, {}, {}], Damage: 0, Charged: 1b}}, {}]
 
 
 #jungle OOB
-execute if score $prng prngfour matches 12..14 unless score $prng prngfour matches 13 as @a[scores={biometrack=5},tag=informed] run effect give @s poison 1 2
+execute if score $prng prngfour matches 12 as @a[scores={biometrack=5},tag=informed] run effect give @s poison 1 2
 execute if score $prng prngfour matches 16 as @a[scores={biometrack=5},tag=!informed] run function area_fx:jungle/oob
+# jungle oob timer
+execute as @a[scores={biometrack=..5}] at @s run function area_fx:jungle/oob_escape
+execute as @a unless score @s biometrack matches 5 run scoreboard players set @s oob_timer 0
 
 
 #finale reset
 execute if score $prng prngone matches 5 if entity @a[scores={biometrack=17}] run forceload add 53 -894 93 -926
 execute if score $prng prngone matches 15 unless entity @a[scores={biometrack=17}] run forceload remove 53 -894 93 -926
-execute if score $prng prngone matches 25 positioned -73.5 206 -910.5 unless score $reset finale matches 1 if entity @a[scores={biometrack=17}] if entity @a[distance=..110] unless entity @a[distance=..70] run function area_fx:finale/boss/floor_reset
-execute if score $prng prngone matches 25 positioned -73.5 206 -910.5 if score $reset finale matches 1 if entity @a[scores={biometrack=17}] unless entity @a[distance=50..110] run scoreboard players set $reset finale 0
+execute if score $prng prngone matches 45 positioned -73.5 206 -910.5 unless score $reset finale matches 1 if entity @a[scores={biometrack=17}] if entity @a[distance=..110] unless entity @a[distance=..70] run function area_fx:finale/boss/floor_reset
+execute if score $prng prngone matches 45 positioned -73.5 206 -910.5 if score $reset finale matches 1 if entity @a[scores={biometrack=17}] unless entity @a[distance=50..110] run scoreboard players set $reset finale 0
 #finale wither water
 execute as @a[scores={biometrack=17}] at @s if block ~ ~1 ~ water run effect give @s wither 1 0
 
@@ -126,3 +126,9 @@ execute as @a[scores={biometrack=17}] at @s if block ~ ~1 ~ water run effect giv
 
 # area entry titles
 execute if score $prng prngfive matches 7 as @a run function area_fx:titles/in
+
+
+# grayscale clangers
+execute if entity @a[scores={biometrack=13..17}] run scoreboard players set $clangers biometrack 1
+# execute if entity @a[scores={biometrack=16}] run scoreboard players set $clangers biometrack 1
+execute if score $clangers biometrack matches 1 as @e[type=wither_skeleton,tag=Clanger] at @s run function area_fx:penult/clangers

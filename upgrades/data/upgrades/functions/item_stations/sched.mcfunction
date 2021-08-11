@@ -1,12 +1,12 @@
 execute if score $item up_points matches 1.. run scoreboard players remove $item up_points 1
 
 # sword station
-# execute positioned -18.5 57 24.5 if entity @a[distance=..15] run function upgrades:item_stations/sword
-# execute positioned -18.5 57 24.5 if entity @a[distance=..15] run function upgrades:item_stations/pick
-# execute positioned -18.5 57 24.5 if entity @a[distance=..15] run function upgrades:item_stations/helm
-# execute positioned -18.5 57 24.5 if entity @a[distance=..15] run function upgrades:item_stations/chest
-# execute positioned -18.5 57 24.5 if entity @a[distance=..15] run function upgrades:item_stations/legs
-# execute positioned -18.5 57 24.5 if entity @a[distance=..15] run function upgrades:item_stations/boots
+execute positioned -185.5 26 357.5 if entity @a[distance=..15] run function upgrades:item_stations/sword
+execute positioned -412.5 27 330.5 if entity @a[distance=..15] run function upgrades:item_stations/pick
+execute positioned -313.5 101 176.5 if entity @a[distance=..15] run function upgrades:item_stations/helm
+execute positioned -226.5 57 -44.5 if entity @a[distance=..15] run function upgrades:item_stations/chest
+execute positioned -505.5 46 -88.5 if entity @a[distance=..15] run function upgrades:item_stations/legs
+execute positioned -499.5 91 -383.5 if entity @a[distance=..15] run function upgrades:item_stations/boots
 
 
 execute if score $item up_points matches 1 run kill @e[type=item,tag=upgrade_item]
