@@ -1,10 +1,7 @@
 {
-    "rewards": {
-      "function": "custitems:tagcheck/invcheck"
-    },
-    "criteria": {
-      "requirement": {
-        "trigger": "minecraft:inventory_changed"
-      }
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed"
     }
   }
+}

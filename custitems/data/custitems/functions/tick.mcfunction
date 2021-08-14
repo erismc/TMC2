@@ -1,5 +1,12 @@
+# check scores from previous tick (for thrown tridents)
+execute as @a[scores={trident_throw=1..,mhtrack=5}] at @s run function custitems:aoe_trident/launch
+execute as @a[scores={trident_throw=1..,ohtrack=3}] at @s run function custitems:aoe_trident/launch
+
+
 # save tags to scores
 execute as @a at @s run function custitems:tagcheck/sched
+execute as @a at @s run function custitems:tagcheck/invcheck
+
 
 
 
@@ -11,9 +18,31 @@ function custitems:lightbringer/sched
 ###############################################################
 
 # custom offhands
-# feather
+# feather - mole_oh:1
 execute as @a if score @s ohtrack matches 1 at @s run function custitems:feather/sched
-
+# armoured cargo - mole_oh:2
+execute as @a[scores={ohtrack=2}] at @s run function custitems:offhands/lowhp/health_check
+execute as @a[tag=armoured_cargo] unless entity @s[tag=NoArmour] run attribute @s generic.armor base set 10
+execute as @a[tag=!armoured_cargo] unless entity @s[tag=NoArmour] run attribute @s generic.armor base set 0
+execute as @a[tag=armoured_cargo] unless entity @s[tag=NoArmour] run tag @s remove armoured_cargo
+# AOE trident - mole_oh:3 (commands at the top)
+# blaze powder - mole_oh:4 gives speed and strength when not wearing much armour?
+execute as @a[scores={ohtrack=4}] at @s run function custitems:offhands/lowarmour/armour_check
+# rabbit foot - mole_oh:5 that gives super jump when crouching
+execute as @a[scores={ohtrack=5}] at @s run function custitems:offhands/jumper/sched
+# flint and steel - mole_oh:6 - that sets nearby mobs on fire on kill
+execute as @a[scores={ohtrack=6,mobderer=1}] at @s run function custitems:offhands/firestarter/sched
+# illuminating blaze rod - mole_oh:7
+execute as @a at @s if score @s ohtrack matches 7 run scoreboard players set @s mole_nv 2
+execute as @a[scores={mole_nv=2}] run effect give @s night_vision 20 0 true
+execute as @a[scores={mole_nv=1}] run effect clear @s night_vision
+execute as @a[scores={mole_nv=1..}] run scoreboard players remove @s mole_nv 1
+# slowfall phantom membrane - mole_oh:8
+execute as @a[scores={ohtrack=8}] run effect give @s slow_falling 1 0 false
+execute as @a[scores={ohtrack=8}] at @s if block ~ ~-0.5 ~ air positioned ~ ~-0.5 ~ run function custitems:offhands/cloud/particles
+# mole_oh:9 crossbow that reloads on kill
+# having this work in the offhand could be very op and very fun, might need to be nerfed somehow though lol (maybe remove enchants when giving it back into the offhand?)
+execute as @a[scores={mobderer=1..,ohtrack=9}] run item replace entity @s weapon.offhand with crossbow{display:{Name:'{"text":"Hades\' Revenge","color":"#0099FF","bold":true,"italic":false}',Lore:['{"text":"Sharpness V","color":"gray","italic":false}','{"text":"Quick Charge II","color":"gray","italic":false}','{"text":"Piercing II","color":"gray","italic":false}','{"text":" ","color":"white"}','{"text":"A crossbow stolen from","color":"dark_aqua","italic":true}','{"text":"god of the Underworld","color":"dark_aqua","italic":true}','{"text":" ","color":"white"}','{"text":"On Kill: ","color":"gray","italic":false}','{"text":" Reloads a fearsome volley","color":"blue","italic":false}']},HideFlags:127,Unbreakable:1b,RepairCost:50,mole_mh:6,mole_oh:9,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:piercing",lvl:2s}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b}],Charged:1b}
 
 
 # custom mainhands
@@ -25,6 +54,9 @@ execute if score $prng prngfive matches 5..15 unless score $prng prngfive matche
 execute as @a if score @s mobderer matches 1 if score @s mhtrack matches 3 run summon area_effect_cloud ~ ~0.55 ~ {ReapplicationDelay:0,Radius:0.5f,Duration:10,Age:0,Potion:"minecraft:awkward",Effects:[{Id:10b,Amplifier:20b,Duration:2}]}
 # mole_mh:4 - diamond pickaxe in the upgrade tree
 execute as @a[scores={spawnerbreak=1..,mhtrack=4}] at @s positioned ^ ^ ^2 run effect give @e[distance=..6,type=#custitems:hostility] wither 6 0 false
+# mole_mh:5 - AOE trident (commands above)
+# mole_mh:6 - Crossbow that reloads on kill
+execute as @a[scores={mobderer=1..,mhtrack=6}] run item replace entity @s weapon.mainhand with crossbow{display:{Name:'{"text":"Hades\' Revenge","color":"#0099FF","bold":true,"italic":false}',Lore:['{"text":"Sharpness V","color":"gray","italic":false}','{"text":"Quick Charge II","color":"gray","italic":false}','{"text":"Piercing II","color":"gray","italic":false}','{"text":" ","color":"white"}','{"text":"A crossbow stolen from","color":"dark_aqua","italic":true}','{"text":"god of the Underworld","color":"dark_aqua","italic":true}','{"text":" ","color":"white"}','{"text":"On Kill: ","color":"gray","italic":false}','{"text":" Reloads a fearsome volley","color":"blue","italic":false}']},HideFlags:127,Unbreakable:1b,RepairCost:50,mole_mh:6,mole_oh:9,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:piercing",lvl:2s}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b}],Charged:1b}
 
 
 # custom helmets
@@ -52,7 +84,9 @@ execute as @a[scores={feettrack=1,mobderer=1..}] run effect give @s jump_boost 5
 
 
 
-# resets mob kill, spawner break score to 0, drops voidtrack score by 1
-execute as @a if score @s mobderer matches 1.. run scoreboard players set @s mobderer 0
-execute as @a if score @s spawnerbreak matches 1.. run scoreboard players set @s spawnerbreak 0
+# resets mob kill, spawner break score to 0, drops voidtrack score by 1, trident throw to 0
+scoreboard players set @a mobderer 0
+scoreboard players set @a spawnerbreak 0
+scoreboard players set @a trident_throw 0
 execute as @a unless score @s voidtrack matches ..0 run scoreboard players remove @s voidtrack 1
+

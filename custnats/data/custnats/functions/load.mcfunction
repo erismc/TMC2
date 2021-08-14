@@ -29,6 +29,11 @@ scoreboard objectives add spawnerdelay dummy
 scoreboard objectives add shrines dummy
 scoreboard objectives add finale dummy
 scoreboard objectives add oob_timer dummy
+scoreboard objectives add health dummy
+scoreboard objectives add armour dummy
+scoreboard objectives add sneaker dummy
+scoreboard objectives add mole_nv dummy
+scoreboard objectives add trident_throw minecraft.used:minecraft.trident
 scoreboard objectives add mobderer minecraft.custom:minecraft.mob_kills 
 scoreboard objectives add spawnerbreak minecraft.broken:minecraft.spawner
 
