@@ -12,13 +12,13 @@ execute store result score @s legstrack run data get storage mole:items temp[{Sl
 execute store result score @s feettrack run data get storage mole:items temp[{Slot:100b}].tag.mole_feet
 execute store result score @s ohtrack run data get storage mole:items temp[{Slot:-106b}].tag.mole_oh
 
-execute if data storage mole:items temp[{Slot:103b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:103b}].test[1]
+execute if data storage mole:items temp[{Slot:103b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:103b}].tag.test[1]
 execute unless score @s uuid_compare matches 0 unless score @s uuid_track = @s uuid_compare run tag @s add NoArmour
-execute if data storage mole:items temp[{Slot:102b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:102b}].test[1]
+execute if data storage mole:items temp[{Slot:102b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:102b}].tag.test[1]
 execute unless score @s uuid_compare matches 0 unless score @s uuid_track = @s uuid_compare run tag @s add NoArmour
-execute if data storage mole:items temp[{Slot:101b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:101b}].test[1]
+execute if data storage mole:items temp[{Slot:101b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:101b}].tag.test[1]
 execute unless score @s uuid_compare matches 0 unless score @s uuid_track = @s uuid_compare run tag @s add NoArmour
-execute if data storage mole:items temp[{Slot:101b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:101b}].test[1]
+execute if data storage mole:items temp[{Slot:101b}].tag.test store result score @s uuid_track run data get storage mole:items temp[{Slot:101b}].tag.test[1]
 execute unless score @s uuid_compare matches 0 unless score @s uuid_track = @s uuid_compare run tag @s add NoArmour
 
 execute if entity @s[tag=NoArmour] run attribute @s generic.armor base set -50

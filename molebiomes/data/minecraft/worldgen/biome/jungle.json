@@ -30,12 +30,7 @@
       }
     ]
   },
-  "spawn_costs": {
-    "minecraft:creeper": {
-      "energy_budget": 0.15,
-      "charge": 0.5
-    }
-  },
+  "spawn_costs": {},
   "carvers": {},
   "features": []
 }

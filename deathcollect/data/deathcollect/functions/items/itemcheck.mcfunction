@@ -10,6 +10,7 @@ execute if data storage mole:checks two run scoreboard players set $two arraytra
 execute if data storage mole:checks three run scoreboard players set $three arraytrack 3
 execute if data storage mole:checks four run scoreboard players set $four arraytrack 4
 
+execute store result score $keep_inv difftrack run gamerule keepInventory
 
 
 execute unless score $one arraytrack matches 1 as @e[distance=..4,type=item] at @s run function deathcollect:items/array1

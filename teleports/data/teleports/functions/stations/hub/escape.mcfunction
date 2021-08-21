@@ -1,4 +1,4 @@
-execute if score $tphub tphub matches 0 unless score $start tptrack matches 1 run tp @s 201.5 156 -326.5 -161 0
+execute if score @s tptrack matches 0 unless score $start tptrack matches 1 run tp @s 201.5 156 -326.5 -161 0
 execute if score $tphub tphub matches 0 if score $start tptrack matches 1 run tp @s -38.5 44 402.5 0 0
 execute if score @s tptrack matches 1 run tp @s -131.5 54 358.5 -40 0
 execute if score @s tptrack matches 2 run tp @s -247.5 21 331.5 90 0

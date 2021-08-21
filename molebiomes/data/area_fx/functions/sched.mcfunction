@@ -2,7 +2,10 @@
 # me: why are you reading my function files you masochist
 
 # add score of 0 for tprack to new players
-# execute if score $start tptrack matches 1 as @a unless score @s tptrack matches 0.. run scoreboard players set @s tptrack 0
+execute if score $start tptrack matches 1 as @a unless score @s tptrack matches 0.. run scoreboard players set @s tptrack 0
+execute unless score $start tptrack matches 1 positioned 210 157 -362 as @a[distance=..80,gamemode=survival] run gamemode adventure @s
+execute unless score $start tptrack matches 1 positioned 210 157 -362 as @a[distance=..80,gamemode=adventure] run scoreboard players set @s tptrack 0
+execute as @a[x=174,z=-200,y=118,dx=80,dz=80,dy=5,gamemode=adventure] run tp @s 212.5 130 -161.5 0 -10
 
 
 
