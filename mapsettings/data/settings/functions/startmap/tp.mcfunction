@@ -4,4 +4,5 @@ playsound minecraft:entity.wither.ambient ambient @s ~ ~ ~ 0.5 0.5
 playsound minecraft:ambient.nether_wastes.loop ambient @s ~ ~ ~ 1.0 0.7
 gamemode survival
 clear @s 
+effect clear @s
 

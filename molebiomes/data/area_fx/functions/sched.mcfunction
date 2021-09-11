@@ -134,8 +134,8 @@ execute if entity @a[scores={biometrack=13..17}] run scoreboard players set $cla
 execute if score $clangers biometrack matches 1 as @e[type=wither_skeleton,tag=Clanger] at @s run function area_fx:penult/clangers
 
 
-# final area bell (maybe rewrite this trigger when you can be bothered)
-execute if score $prng prngone matches 5 if score $prng prngfour matches 7 as @a[scores={biometrack=17}] at @s run playsound ttob:sfx.cathedral_bell ambient @s ~ ~16 ~ 1 1
+# # final area bell (trigger moved to 5 minute timer in area_fx:5_mins)
+# execute if score $prng prngone matches 5 if score $prng prngfour matches 7 as @a[scores={biometrack=17}] at @s run playsound ttob:sfx.cathedral_bell ambient @s ~ ~16 ~ 1 1
 
 
 
@@ -145,3 +145,8 @@ execute unless score $complete jungle_keys matches 1 positioned -303.5 82 129.5 
 # boatrace
 execute if score $mapstart race_hidden matches 1 if entity @a[scores={biometrack=12..15}] run function area_fx:boatrace/sched
 
+# lobby commands
+execute positioned 213.5 157 -355.5 if entity @a[distance=..60] run function area_fx:lobby/sched
+
+# intro commands that run in the nether
+execute in minecraft:the_nether positioned 30 170 -170 if entity @a[distance=..500] run function area_fx:intro/sched

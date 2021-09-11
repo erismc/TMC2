@@ -5,7 +5,7 @@ function settings:startmap/gamerules
 execute as @a at @s run function settings:startmap/tp
 
 # summon mobs for starter dungeon
-function settings:startmap/mobs
+schedule function settings:startmap/mobs 4s
 
 scoreboard players set @a tptrack 0
 scoreboard players set $start tptrack 1
@@ -28,5 +28,5 @@ scoreboard players set $magenta jungle_keys 0
 scoreboard players set $light_blue jungle_keys 0
 scoreboard players set $mapstart race_hidden 1
 
- 
+
 setworldspawn 37 14 42
