@@ -5,6 +5,10 @@ execute store result score $count pickedup run data get storage mole:pickup temp
 
 scoreboard players set $checked pickedup 0
 
+execute if data storage mole:pickup temp.tag.mole_oh run scoreboard players set $checked pickedup 1
+execute unless score $checked pickedup matches 1 if data storage mole:pickup temp.tag.mole_mh run scoreboard players set $checked pickedup 1
+execute unless score $checked pickedup matches 1 if data storage mole:pickup temp.tag.upgrades.upgrades run scoreboard players set $checked pickedup 1
+
 # template command
 # execute unless score $checked pickedup matches 1 if data storage mole:pickup temp{id:"minecraft:replacemeplease:)"} run function pickup:pickup/item_extend
 

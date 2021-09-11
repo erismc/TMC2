@@ -33,6 +33,10 @@ scoreboard objectives add health dummy
 scoreboard objectives add armour dummy
 scoreboard objectives add sneaker dummy
 scoreboard objectives add mole_nv dummy
+scoreboard objectives add jungle_keys dummy
+scoreboard objectives add race_timer dummy
+scoreboard objectives add race_hidden dummy
+scoreboard objectives add item_motion dummy
 scoreboard objectives add trident_throw minecraft.used:minecraft.trident
 scoreboard objectives add mobderer minecraft.custom:minecraft.mob_kills 
 scoreboard objectives add spawnerbreak minecraft.broken:minecraft.spawner
@@ -41,6 +45,9 @@ scoreboard objectives add swimmer minecraft.custom:minecraft.swim_one_cm
 scoreboard players set $100 operator 100
 scoreboard players set $2 dividetwo 2
 scoreboard players set $4 operator 4
+scoreboard players set First race_timer 100
+scoreboard players set Second race_timer 200
+scoreboard players set Third race_timer 300
 
 execute unless score $creeper creeperfire matches 0..10 run scoreboard players set $creeper creeperfire 0
 

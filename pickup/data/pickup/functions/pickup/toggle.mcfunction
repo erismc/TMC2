@@ -8,3 +8,6 @@ execute if score @s pickedup matches 0 run scoreboard players set $toggle picked
 execute if score @s pickedup matches 1 run scoreboard players set $toggle pickedup 4
 execute if score $toggle pickedup matches 3 run scoreboard players set @s pickedup 1
 execute if score $toggle pickedup matches 4 run scoreboard players set @s pickedup 0
+
+execute if score $toggle pickedup matches 3 run tellraw @s ["",{"text":"ENABLING pickup!","bold":true,"color":"dark_green"}]
+execute if score $toggle pickedup matches 4 run tellraw @s ["",{"text":"DISABLING pickup!","bold":true,"color":"dark_red"}]

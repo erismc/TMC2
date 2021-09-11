@@ -1,4 +1,4 @@
-say loading inventory from array 3
+# say loading inventory from array 3
 
 execute if data storage mole:checks three.[0] run data modify storage mole:checks three.[0].Slot set value 0b
 execute if data storage mole:checks three.[1] run data modify storage mole:checks three.[1].Slot set value 1b

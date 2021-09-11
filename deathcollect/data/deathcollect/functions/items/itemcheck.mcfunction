@@ -1,4 +1,4 @@
-scoreboard players set @s deathtrack 0
+# scoreboard players set @s deathtrack 0
 scoreboard players set @s arraytrack 0
 scoreboard players set $one arraytrack 0
 scoreboard players set $two arraytrack 0
@@ -27,5 +27,5 @@ execute unless score @s arraytrack matches 1..3 unless score $four arraytrack ma
 
 execute if score @s arraytrack matches 0 run say failed to save data
 
-
+# say loading array
 # save which array the player is using to a scoreboard and then execute the load based on that

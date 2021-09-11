@@ -1,7 +1,7 @@
 # low security
-execute positioned -96 16 354 if entity @s[tag=!in_prison,distance=..5] run title @s times 20 100 20
-execute positioned -96 16 354 if entity @s[tag=!in_prison,distance=..5] run title @s title {"text":"Minimum Security","color":"gray"}
-execute positioned -96 16 354 if entity @s[tag=!in_prison,distance=..5] run tag @s add in_prison
+execute positioned -158 65 357 if entity @s[tag=!in_prison,distance=..5] run title @s times 20 100 20
+execute positioned -158 65 357 if entity @s[tag=!in_prison,distance=..5] run title @s title {"text":"Minimum Security","color":"gray"}
+execute positioned -158 65 357 if entity @s[tag=!in_prison,distance=..5] run tag @s add in_prison
 
 # jungle
 execute positioned -309 18 329 if entity @s[tag=!in_jung,distance=..7] run title @s times 20 100 20

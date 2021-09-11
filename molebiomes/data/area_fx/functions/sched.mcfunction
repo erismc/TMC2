@@ -53,8 +53,7 @@ execute if entity @a[scores={biometrack=17}] as @e[type=evoker,tag=springvoker] 
 # prison ravagers
 # the ravagers are slow, unless you look at them :             )
 execute if score $prng prngfive matches 1 if score $intro ravagers matches 0 positioned -64.5 35.5 386.5 if entity @a[distance=..5] run function area_fx:prison/ravagers
-execute if score $prng prngfive matches 5 if score $intro ravagers matches 1 positioned -27.5 35.5 -354.5 if entity @a[distance=..5] run function area_fx:prison/ravagers
-execute if score $prng prngfive matches 9 if score $intro ravagers matches 1 positioned -64.5 35.5 317.5 if entity @a[distance=..5] run function area_fx:prison/ravagers
+execute if score $prng prngfive matches 5 if score $intro ravagers matches 1 positioned -64.5 35.5 354.5 if entity @a[distance=..3] run function area_fx:prison/ravagers
 execute if score $prng prngfive matches 13 as @a[scores={biometrack=1}] as @e[type=ravager,distance=18..,tag=intro_b] unless predicate area_fx:slowness run effect give @s slowness 100000 0 true
 execute if score $intro ravagers matches 2 as @a[scores={biometrack=1}] at @s if predicate area_fx:facing_rav run function area_fx:prison/rav_face
 
@@ -85,7 +84,7 @@ execute if entity @a[scores={biometrack=11..12}] run scoreboard players set $tri
 execute if entity @a[scores={biometrack=17}] run scoreboard players set $trident biometrack 1
 execute if score $trident biometrack matches 1 as @e[type=trident,tag=!Tested] at @s run function area_fx:drowned/toggler
 
-# prepares the boss area in the hades cathedral (reset these scores to zero in map-start function please!!)
+# prepares the boss area in the hades cathedral
 execute if score $prng prngfive matches 10 unless score $hades hadesin matches 1 if entity @a[scores={biometrack=8}] positioned -541 129 -278 if entity @a[gamemode=survival,distance=..60] run function area_fx:hades/cages/reload
 # opens the cages once the boss spawns
 execute unless score $boss hadesin matches 1 if entity @a[scores={biometrack=8}] positioned -521 131 -279 if entity @a[gamemode=survival,distance=..25] as @e[type=vindicator,tag=HadesBoss,distance=..10] at @s run function area_fx:hades/cages/open
@@ -123,7 +122,6 @@ execute if score $prng prngone matches 45 positioned -73.5 206 -910.5 if score $
 #finale wither water
 execute as @a[scores={biometrack=17}] at @s if block ~ ~1 ~ water run effect give @s wither 1 0
 
-#finale shulkers?
 
 
 # area entry titles
@@ -134,3 +132,16 @@ execute if score $prng prngfive matches 7 as @a run function area_fx:titles/in
 execute if entity @a[scores={biometrack=13..17}] run scoreboard players set $clangers biometrack 1
 # execute if entity @a[scores={biometrack=16}] run scoreboard players set $clangers biometrack 1
 execute if score $clangers biometrack matches 1 as @e[type=wither_skeleton,tag=Clanger] at @s run function area_fx:penult/clangers
+
+
+# final area bell (maybe rewrite this trigger when you can be bothered)
+execute if score $prng prngone matches 5 if score $prng prngfour matches 7 as @a[scores={biometrack=17}] at @s run playsound ttob:sfx.cathedral_bell ambient @s ~ ~16 ~ 1 1
+
+
+
+# jungle temple keys
+execute unless score $complete jungle_keys matches 1 positioned -303.5 82 129.5 if entity @a[distance=..40] run function area_fx:jungle/keys/sched
+
+# boatrace
+execute if score $mapstart race_hidden matches 1 if entity @a[scores={biometrack=12..15}] run function area_fx:boatrace/sched
+

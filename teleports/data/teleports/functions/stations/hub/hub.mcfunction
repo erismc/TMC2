@@ -1,4 +1,6 @@
 # execute if score $tphub tphub matches 1 run say hi
+function teleports:stations/hub/clones
+
 #summon in sheep depending on score
 execute if score $tphub tphub matches 1.. unless entity 0000004f-0000-0000-0000-000000000001 run summon sheep 196.5 529.5 -151.5 {NoGravity:1b,Silent:1b,UUID:[I;79,0,0,1],CustomNameVisible:0b,PersistenceRequired:1b,NoAI:1b,Health:1000f,Sheared:1b,Tags:["hub_1","hubsheep"],ActiveEffects:[{Id:10b,Amplifier:10b,Duration:100000000,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:1000000000,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:1000}]}
 execute if score $tphub tphub matches 2.. unless entity 0000004f-0000-0000-0000-000000000002 run summon sheep 193.5 529.5 -155.5 {NoGravity:1b,Silent:1b,UUID:[I;79,0,0,2],CustomNameVisible:0b,PersistenceRequired:1b,NoAI:1b,Health:1000f,Sheared:1b,Tags:["hub_2","hubsheep"],ActiveEffects:[{Id:10b,Amplifier:10b,Duration:100000000,ShowParticles:0b},{Id:14b,Amplifier:0b,Duration:1000000000,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:1000}]}

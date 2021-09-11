@@ -44,7 +44,7 @@ execute as @a[scores={mobderer=1..,ohtrack=9}] run item replace entity @s weapon
 # mole_oh:10 nautilius shell that gives strength whilst swimming
 execute as @a[scores={swimmer=1..,ohtrack=10}] run effect give @s strength 1 0
 # mole_oh:11 riptide trident that gives 5 seconds of strength 4 when thrown
-execute as @a[scores={trident_throw=1..,ohtrack=11}] run effect give @s strength 5 3
+execute as @a[scores={trident_throw=1..,ohtrack=11}] run effect give @s strength 6 3
 
 
 # custom mainhands
@@ -59,7 +59,8 @@ execute as @a[scores={spawnerbreak=1..,mhtrack=4}] at @s positioned ^ ^ ^2 run e
 # mole_mh:5 - AOE trident (commands above)
 # mole_mh:6 - Crossbow that reloads on kill
 execute as @a[scores={mobderer=1..,mhtrack=6}] run item replace entity @s weapon.mainhand with crossbow{display:{Name:'{"text":"Hades\' Revenge","color":"#0099FF","bold":true,"italic":false}',Lore:['{"text":"Sharpness V","color":"gray","italic":false}','{"text":"Quick Charge II","color":"gray","italic":false}','{"text":"Piercing II","color":"gray","italic":false}','{"text":" ","color":"white"}','{"text":"A crossbow stolen from","color":"dark_aqua","italic":true}','{"text":"god of the Underworld","color":"dark_aqua","italic":true}','{"text":" ","color":"white"}','{"text":"On Kill: ","color":"gray","italic":false}','{"text":" Reloads a fearsome volley","color":"blue","italic":false}']},HideFlags:127,Unbreakable:1b,RepairCost:50,mole_mh:6,mole_oh:9,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:piercing",lvl:2s}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b}],Charged:1b}
-
+# mole_mh:7 - herculean trident
+execute as @a[scores={trident_throw=1..,mhtrack=7}] run effect give @s strength 6 3
 
 # custom helmets
 # mole_helm:1 - iron helmet in upgrade tree, gives haste on breaking a spawner
