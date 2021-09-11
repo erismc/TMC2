@@ -25,4 +25,4 @@ execute if entity @s[tag=NoArmour] run attribute @s generic.armor base set -50
 execute if entity @s[tag=NoArmour] run effect give @s hunger 1 0 false
 execute if entity @s[tag=!NoArmour] run attribute @s generic.armor base set 0
 
-advancement revoke @s only custitems:tagcheck/invent_changed
+# advancement revoke @s only custitems:tagcheck/invent_changed

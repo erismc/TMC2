@@ -2,6 +2,9 @@
  
 spawnpoint @a[distance=..11] ~3 ~ ~
 
+execute as @a[distance=..11] run effect give @s resistance 1 2 true
+execute as @a[distance=..11] run effect give @s strength 1 2 true
+
 execute unless entity @e[type=sheep,distance=..10,tag=stations] run function teleports:stations/sheepin
 
 execute if score $tphub tphub matches 5.. run summon area_effect_cloud ~3 ~1.7 ~3 {Particle:"block air",NoGravity:1b,Silent:1b,CustomNameVisible:1b,Radius:0f,Duration:21,CustomName:'{"text":"Warps","bold":true,"italic":false,"underlined":false,"strikethrough":false,"obfuscated":false}'}

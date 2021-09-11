@@ -24,7 +24,6 @@ scoreboard players set $clangers biometrack 0
 
 # greased lightning
 # autumn mob spawning stuff
-# need to actually add mobs to spawn in the water and on the ice
 execute if score $prng prngone matches 5 if entity @a[scores={biometrack=11}] run function area_fx:autumn/land
 execute if score $prng prngone matches 20 if entity @a[scores={biometrack=11}] run function area_fx:autumn/water
 execute if score $prng prngone matches 35 if entity @a[scores={biometrack=11..12}] run function area_fx:autumn/ice

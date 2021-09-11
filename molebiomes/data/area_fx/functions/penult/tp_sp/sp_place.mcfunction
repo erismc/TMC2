@@ -9,7 +9,7 @@ execute if data storage mole:tp_sp sp_delay run data modify block ~ ~ ~ Delay se
 
 #stops the spawnerbreak sound and plays the teleport sound
 stopsound @a[distance=..20] * minecraft:block.metal.break
-playsound minecraft:entity.shulker.teleport hostile @a ~ ~ ~ 
+playsound minecraft:entity.shulker.teleport hostile @a ~ ~ ~ 10 1
 
 #adds a tag to the marker so that the spawner can't return there
 tag @s add donebefore 

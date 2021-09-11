@@ -29,14 +29,14 @@
 # execute if score $prng prngfive matches 17 run particle totem_of_undying ^0.296 ^0.080 ^0.154 0 0 0 0 1 force @a
 # execute if score $prng prngfive matches 19 run particle totem_of_undying ^0.333 ^0.118 ^-0.003 0 0 0 0 1 force @a
 execute if score $prng prngfive matches 1 run particle totem_of_undying ^0.293 ^0.024 ^-0.159 0 0 0 0 1 force @a
-execute if score $prng prngfive matches 3 run particle totem_of_undying ^0.184 ^0.076 ^-0.278 0 0 0 0 1 force @a
+# execute if score $prng prngfive matches 3 run particle totem_of_undying ^0.184 ^0.076 ^-0.278 0 0 0 0 1 force @a
 execute if score $prng prngfive matches 5 run particle totem_of_undying ^0.033 ^0.338 ^-0.332 0 0 0 0 1 force @a
 execute if score $prng prngfive matches 7 run particle totem_of_undying ^-0.127 ^0.537 ^-0.308 0 0 0 0 1 force @a
 execute if score $prng prngfive matches 9 run particle totem_of_undying ^-0.256 ^0.069 ^-0.213 0 0 0 0 1 force @a
-execute if score $prng prngfive matches 11 run particle totem_of_undying ^-0.326 ^0.413 ^-0.068 0 0 0 0 1 force @a
+# execute if score $prng prngfive matches 11 run particle totem_of_undying ^-0.326 ^0.413 ^-0.068 0 0 0 0 1 force @a
 execute if score $prng prngfive matches 13 run particle totem_of_undying ^-0.320 ^0.132 ^0.093 0 0 0 0 1 force @a
 execute if score $prng prngfive matches 15 run particle totem_of_undying ^-0.239 ^0.030 ^0.232 0 0 0 0 1 force @a
-execute if score $prng prngfive matches 17 run particle totem_of_undying ^-0.103 ^0.448 ^0.317 0 0 0 0 1 force @a
+# execute if score $prng prngfive matches 17 run particle totem_of_undying ^-0.103 ^0.448 ^0.317 0 0 0 0 1 force @a
 execute if score $prng prngfive matches 19 run particle totem_of_undying ^0.058 ^0.222 ^0.328 0 0 0 0 1 force @a
 # execute if score $prng prngfive matches 1 run particle totem_of_undying ^0.205 ^0.211 ^0.263 0 0 0 0 1 force @a
 

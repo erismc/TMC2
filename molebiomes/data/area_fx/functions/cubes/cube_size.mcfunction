@@ -6,7 +6,7 @@ data modify storage mole:cubes size set from storage mole:cubes temp.Size
 execute store result score $magma cubehealth run data get storage mole:cubes health 10
 execute store result score $magma cubesize run data get storage mole:cubes size 100
 
-execute if score $prng prngone matches 1 unless score $magma cubehealth matches 0..20 run effect give @s regeneration 1 2
+execute if score $prng prngfour matches 5 unless score $magma cubehealth matches 0..20 run effect give @s regeneration 1 2
 
 execute if score $magma cubehealth matches 300.. unless score $magma cubesize matches 300 run data modify entity @s Size set value 3.0
 execute if score $magma cubehealth matches 230..299 unless score $magma cubesize matches 200 run data modify entity @s Size set value 2.0

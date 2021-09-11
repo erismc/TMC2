@@ -8,8 +8,6 @@ execute as @a at @s run function custitems:tagcheck/sched
 execute as @a at @s run function custitems:tagcheck/invcheck
 
 
-
-
 ###############################################################
 
 # item commands
@@ -43,6 +41,10 @@ execute as @a[scores={ohtrack=8}] at @s if block ~ ~-0.5 ~ air positioned ~ ~-0.
 # mole_oh:9 crossbow that reloads on kill
 # having this work in the offhand could be very op and very fun, might need to be nerfed somehow though lol (maybe remove enchants when giving it back into the offhand?)
 execute as @a[scores={mobderer=1..,ohtrack=9}] run item replace entity @s weapon.offhand with crossbow{display:{Name:'{"text":"Hades\' Revenge","color":"#0099FF","bold":true,"italic":false}',Lore:['{"text":"Sharpness V","color":"gray","italic":false}','{"text":"Quick Charge II","color":"gray","italic":false}','{"text":"Piercing II","color":"gray","italic":false}','{"text":" ","color":"white"}','{"text":"A crossbow stolen from","color":"dark_aqua","italic":true}','{"text":"god of the Underworld","color":"dark_aqua","italic":true}','{"text":" ","color":"white"}','{"text":"On Kill: ","color":"gray","italic":false}','{"text":" Reloads a fearsome volley","color":"blue","italic":false}']},HideFlags:127,Unbreakable:1b,RepairCost:50,mole_mh:6,mole_oh:9,Enchantments:[{id:"minecraft:sharpness",lvl:5s},{id:"minecraft:quick_charge",lvl:5s},{id:"minecraft:piercing",lvl:2s}],ChargedProjectiles:[{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b},{id:"minecraft:arrow",Count:1b}],Charged:1b}
+# mole_oh:10 nautilius shell that gives strength whilst swimming
+execute as @a[scores={swimmer=1..,ohtrack=10}] run effect give @s strength 1 0
+# mole_oh:11 riptide trident that gives 5 seconds of strength 4 when thrown
+execute as @a[scores={trident_throw=1..,ohtrack=11}] run effect give @s strength 5 3
 
 
 # custom mainhands
@@ -64,11 +66,13 @@ execute as @a[scores={mobderer=1..,mhtrack=6}] run item replace entity @s weapon
 execute as @a[scores={spawnerbreak=1..,helmtrack=1}] run effect give @s haste 9 0 false
 # mole_helm:2 - diamond helmet in upgrade tree, gives strength on mob kill
 execute as @a[scores={mobderer=1..,helmtrack=2}] run effect give @s strength 5 0 false
+# mole_helm:3
+execute as @a[scores={helmtrack=3}] at @s run effect give @e[type=#custitems:hostility,distance=..8] glowing 1 0
 
 
 # custom chestplates
 # mole_chest:1 - diamond chestplate in upgrade tree, gives saturation periodically
-execute as @a[scores={chesttrack=1}] if score $prng prngfour matches 5..6 run effect give @s saturation 1 1 false
+execute as @a[scores={chesttrack=1}] if score $prng prngfour matches 5 if score $prng prngone matches 17 run give @s bread 1
 
 
 # custom leggings
@@ -80,7 +84,11 @@ execute as @a[scores={chesttrack=1}] if score $prng prngfour matches 5..6 run ef
 execute as @a[scores={feettrack=1,mobderer=1..}] run effect give @s jump_boost 5 1 false
 
 
-
+# gives passive regen to players on easy
+execute if score $diff difftrack matches 1 if score $prng prngfour matches 69 run effect give @s regeneration 1 2
+# gives 1 minute of resistance 2 and 4 minutes of resistance 1 to players on easy after they die 
+execute as @a if score @s lifetime matches 1 run effect give @s resistance 300 0 true
+execute as @a if score @s lifetime matches 1 run effect give @s resistance 60 1 true
 
 
 

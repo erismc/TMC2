@@ -8,6 +8,6 @@ scoreboard players set $checked pickedup 0
 scoreboard players set $count pickedup 0
 
 
-function testpack:pickup/tag_remove
-function testpack:pickup/trigger_on
+function pickup:pickup/tag_remove
+function pickup:pickup/trigger_on
 

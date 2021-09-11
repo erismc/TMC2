@@ -36,6 +36,7 @@ scoreboard objectives add mole_nv dummy
 scoreboard objectives add trident_throw minecraft.used:minecraft.trident
 scoreboard objectives add mobderer minecraft.custom:minecraft.mob_kills 
 scoreboard objectives add spawnerbreak minecraft.broken:minecraft.spawner
+scoreboard objectives add swimmer minecraft.custom:minecraft.swim_one_cm
 
 scoreboard players set $100 operator 100
 scoreboard players set $2 dividetwo 2

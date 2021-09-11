@@ -4,7 +4,7 @@
   "predicate": {
     "effects": {
       "minecraft:luck": {
-        "amplifier": 75
+        "amplifier": 76
       }
     }
   }
