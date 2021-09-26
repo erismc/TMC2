@@ -1,5 +1,5 @@
 # start line
-execute positioned 115 191 -1650 as @a[dx=13,dy=4,dz=6,tag=!Racing] run function area_fx:boatrace/start
+execute positioned -115 191 -1650 as @a[dx=13,dy=4,dz=6,tag=!Racing] run function area_fx:boatrace/start
 
 
 # checkpoint 1

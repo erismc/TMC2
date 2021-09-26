@@ -2,6 +2,8 @@ tag @a[distance=..35] add FIGHT
 effect give @a strength 1000 3
 scoreboard players set $wither intro_fight 1
 
+tellraw @s {"text":"How dare you come to my abode","bold":false,"color":"red"}
+
 particle minecraft:explosion ~ ~ ~ 10 8 10 1 200
 
 playsound entity.generic.explode master @a ~ ~ ~ 10 0.9
@@ -23,11 +25,11 @@ summon blaze -92 149 -414 {Tags:["IntroBoss"]}
 summon blaze -92 149 -414 {Tags:["IntroBoss"]}
 summon blaze -92 149 -414 {Tags:["IntroBoss"]}
 summon blaze -92 149 -414 {Tags:["IntroBoss"]}
-summon blaze -92 149 -414 {Tags:["IntroBoss"]}
-summon blaze -92 149 -414 {Tags:["IntroBoss"]}
-summon blaze -92 149 -414 {Tags:["IntroBoss"]}
-summon blaze -92 149 -414 {Tags:["IntroBoss"]}
-summon blaze -92 149 -414 {Tags:["IntroBoss"]}
+# summon blaze -92 149 -414 {Tags:["IntroBoss"]}
+# summon blaze -92 149 -414 {Tags:["IntroBoss"]}
+# summon blaze -92 149 -414 {Tags:["IntroBoss"]}
+# summon blaze -92 149 -414 {Tags:["IntroBoss"]}
+# summon blaze -92 149 -414 {Tags:["IntroBoss"]}
 
 summon wither_skeleton -91.5 115 -386.5 {Tags:["IntroBoss"]}
 summon wither_skeleton -91.5 115 -386.5 {Tags:["IntroBoss"]}
@@ -50,5 +52,5 @@ summon wither_skeleton -79.5 114 -397.5 {Tags:["IntroBoss"]}
 schedule function area_fx:intro/phase1 30s
 schedule function area_fx:intro/phase2 35s
 schedule function area_fx:intro/phase3 40s
-schedule function area_fx:intro/phase4 45s
-schedule function settings:startmap/begin 48s
+schedule function area_fx:intro/phase4 46s
+schedule function settings:startmap/begin 51s

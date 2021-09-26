@@ -4,6 +4,7 @@ spawnpoint @a[distance=..11] ~3 ~ ~
 
 execute as @a[distance=..11] run effect give @s resistance 1 2 true
 execute as @a[distance=..11] run effect give @s strength 1 2 true
+execute as @e[distance=..13,type=#custitems:hostility] run effect give @s wither 2 1 true
 
 execute unless entity @e[type=sheep,distance=..10,tag=stations] run function teleports:stations/sheepin
 

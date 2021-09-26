@@ -38,6 +38,7 @@ scoreboard objectives add race_timer dummy
 scoreboard objectives add race_hidden dummy
 scoreboard objectives add item_motion dummy
 scoreboard objectives add intro_fight dummy
+scoreboard objectives add pandas dummy
 scoreboard objectives add trident_throw minecraft.used:minecraft.trident
 scoreboard objectives add mobderer minecraft.custom:minecraft.mob_kills 
 scoreboard objectives add spawnerbreak minecraft.broken:minecraft.spawner

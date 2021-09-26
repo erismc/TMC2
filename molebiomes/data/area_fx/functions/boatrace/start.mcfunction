@@ -7,6 +7,9 @@ tag @s add Racing
 #start timer and reset checkpoint tracker
 scoreboard players set @s race_timer 0
 scoreboard players set @s race_hidden 0
+scoreboard players set First race_timer 100
+scoreboard players set Second race_timer 150
+scoreboard players set Third race_timer 250
 
 # add a score to track that the race is running
 scoreboard players set $active race_hidden 1
@@ -19,4 +22,4 @@ scoreboard objectives modify timer displayname [{"text":"Race Timer"}]
 schedule function area_fx:boatrace/timer_inc 1s
 
 # schedules function to remove sidebar and deactivates timer etc
-schedule function area_fx:boatrace/end_race 400s replace
+schedule function area_fx:boatrace/end_race 300s replace

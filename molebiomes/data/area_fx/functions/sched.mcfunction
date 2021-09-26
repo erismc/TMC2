@@ -24,9 +24,9 @@ scoreboard players set $clangers biometrack 0
 
 # greased lightning
 # autumn mob spawning stuff
-execute if score $prng prngone matches 5 if entity @a[scores={biometrack=11}] run function area_fx:autumn/land
-execute if score $prng prngone matches 20 if entity @a[scores={biometrack=11}] run function area_fx:autumn/water
-execute if score $prng prngone matches 35 if entity @a[scores={biometrack=11..12}] run function area_fx:autumn/ice
+execute if score $prng prngone matches 5..25 unless score $prng prngone matches 6..24 if entity @a[scores={biometrack=11}] run function area_fx:autumn/land
+execute if score $prng prngone matches 20..35 unless score $prng prngone matches 21..34 if entity @a[scores={biometrack=11}] run function area_fx:autumn/water
+execute if score $prng prngone matches 35..49 unless score $prng prngone matches 36..48 if entity @a[scores={biometrack=11..12}] run function area_fx:autumn/ice
 
 
 # summer functions, happened so fast 
@@ -37,7 +37,7 @@ execute if score $prng prngone matches 35 if entity @a[scores={biometrack=11..12
 
 
 # runs the summer function every tick
-execute as @a[scores={biometrack=10}] at @s run function area_fx:summer/temperature
+execute as @a[scores={biometrack=10},gamemode=survival] at @s run function area_fx:summer/temperature
 execute as @a unless score @s biometrack matches 10 if score @s heattrack matches 5.. run scoreboard players remove @s heattrack 5
 
 
@@ -54,6 +54,8 @@ execute if entity @a[scores={biometrack=17}] as @e[type=evoker,tag=springvoker] 
 # the ravagers are slow, unless you look at them :             )
 execute if score $prng prngfive matches 1 if score $intro ravagers matches 0 positioned -64.5 35.5 386.5 if entity @a[distance=..5] run function area_fx:prison/ravagers
 execute if score $prng prngfive matches 5 if score $intro ravagers matches 1 positioned -64.5 35.5 354.5 if entity @a[distance=..3] run function area_fx:prison/ravagers
+execute if score $prng prngfive matches 11 positioned -64 37 320 as @a[distance=..5] run spawnpoint @s -71 33 314 
+execute if score $prng prngfive matches 16 positioned -31 36 354 as @a[distance=..5] run spawnpoint @s -27 34 354 
 execute if score $prng prngfive matches 13 as @a[scores={biometrack=1}] as @e[type=ravager,distance=18..,tag=intro_b] unless predicate area_fx:slowness run effect give @s slowness 100000 0 true
 execute if score $intro ravagers matches 2 as @a[scores={biometrack=1}] at @s if predicate area_fx:facing_rav run function area_fx:prison/rav_face
 
@@ -61,10 +63,10 @@ execute if score $intro ravagers matches 2 as @a[scores={biometrack=1}] at @s if
 # death effect creepers
 # would be better to tag every area_effect_cloud being used for anything else with a tag and then use tag=!thing in the selector, but I added this later on and didn't want to edit everything else, so nbt= it is.
 # to reduce @e calls, this should only run in areas with specific creeper effects
-execute if entity @a[scores={biometrack=4..7}] run scoreboard players set $creeper biometrack 1
+execute if entity @a[scores={biometrack=4..13}] run scoreboard players set $creeper biometrack 1
 execute if entity @a[scores={biometrack=10..12}] run scoreboard players set $creeper biometrack 1
-execute if entity @a[scores={biometrack=17}] run scoreboard players set $creeper biometrack 1
-execute if score $creeper biometrack matches 1 as @e[type=area_effect_cloud,tag=!bsmole,tag=!spawned,nbt={Particle:"minecraft:entity_effect"}] at @s run function area_fx:creepers/creeper_fx
+execute if entity @a[scores={biometrack=16..17}] run scoreboard players set $creeper biometrack 1
+execute if score $creeper biometrack matches 1 as @e[type=area_effect_cloud,tag=!bsmole,tag=!spawned,tag=!Spawned,nbt={Particle:"minecraft:entity_effect"}] at @s run function area_fx:creepers/creeper_fx
 execute if score $prng prngfive matches 5 if score $creeper biometrack matches 1 as @e[type=creeper,tag=!spawned] at @s run function area_fx:creepers/particles
 execute if score $prng prngfive matches 15 if score $creeper biometrack matches 1 as @e[type=creeper,tag=!spawned] at @s run function area_fx:creepers/particles
 # if predicate (luck level check) inside the function to decide which particle command runs
@@ -83,6 +85,7 @@ execute if entity @a[scores={biometrack=7}] run scoreboard players set $trident 
 execute if entity @a[scores={biometrack=11..12}] run scoreboard players set $trident biometrack 1
 execute if entity @a[scores={biometrack=17}] run scoreboard players set $trident biometrack 1
 execute if score $trident biometrack matches 1 as @e[type=trident,tag=!Tested] at @s run function area_fx:drowned/toggler
+
 
 # prepares the boss area in the hades cathedral
 execute if score $prng prngfive matches 10 unless score $hades hadesin matches 1 if entity @a[scores={biometrack=8}] positioned -541 129 -278 if entity @a[gamemode=survival,distance=..60] run function area_fx:hades/cages/reload
@@ -150,3 +153,6 @@ execute positioned 213.5 157 -355.5 if entity @a[distance=..60] run function are
 
 # intro commands that run in the nether
 execute in minecraft:the_nether positioned 30 170 -170 if entity @a[distance=..500] run function area_fx:intro/sched
+
+# kills players who fall into the void so that the key-item return still works
+execute as @a[y=-64,dy=10,x=-5000,dx=10000,z=-5000,dz=10000] run kill @s
