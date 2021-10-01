@@ -63,9 +63,9 @@ execute if score $intro ravagers matches 2 as @a[scores={biometrack=1}] at @s if
 # death effect creepers
 # would be better to tag every area_effect_cloud being used for anything else with a tag and then use tag=!thing in the selector, but I added this later on and didn't want to edit everything else, so nbt= it is.
 # to reduce @e calls, this should only run in areas with specific creeper effects
-execute if entity @a[scores={biometrack=4..13}] run scoreboard players set $creeper biometrack 1
-execute if entity @a[scores={biometrack=10..12}] run scoreboard players set $creeper biometrack 1
-execute if entity @a[scores={biometrack=16..17}] run scoreboard players set $creeper biometrack 1
+execute if entity @a[scores={biometrack=4..17}] run scoreboard players set $creeper biometrack 1
+# execute if entity @a[scores={biometrack=10..12}] run scoreboard players set $creeper biometrack 1
+# execute if entity @a[scores={biometrack=16..17}] run scoreboard players set $creeper biometrack 1
 execute if score $creeper biometrack matches 1 as @e[type=area_effect_cloud,tag=!bsmole,tag=!spawned,tag=!Spawned,nbt={Particle:"minecraft:entity_effect"}] at @s run function area_fx:creepers/creeper_fx
 execute if score $prng prngfive matches 5 if score $creeper biometrack matches 1 as @e[type=creeper,tag=!spawned] at @s run function area_fx:creepers/particles
 execute if score $prng prngfive matches 15 if score $creeper biometrack matches 1 as @e[type=creeper,tag=!spawned] at @s run function area_fx:creepers/particles
@@ -152,7 +152,7 @@ execute if score $mapstart race_hidden matches 1 if entity @a[scores={biometrack
 execute positioned 213.5 157 -355.5 if entity @a[distance=..60] run function area_fx:lobby/sched
 
 # intro commands that run in the nether
-execute in minecraft:the_nether positioned 30 170 -170 if entity @a[distance=..500] run function area_fx:intro/sched
+execute in minecraft:the_nether positioned 30 170 -170 if entity @a[distance=..1000] run function area_fx:intro/sched
 
 # kills players who fall into the void so that the key-item return still works
 execute as @a[y=-64,dy=10,x=-5000,dx=10000,z=-5000,dz=10000] run kill @s

@@ -15,6 +15,7 @@ scoreboard players set $boss hadesin 0
 scoreboard players set $tphub tphub 0
 scoreboard players set $intro ravagers 0
 scoreboard players set $thunder thundermole 0
+scoreboard players set $total discs_placed 0
 scoreboard players set @a up_sw 0
 scoreboard players set @a up_chest 0
 scoreboard players set @a up_helm 0

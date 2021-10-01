@@ -4,7 +4,7 @@ function upgrades:item_stations/sched
 # particles and sounds in station.mcfunction
 # jungle tree dungeon
 execute positioned -386.5 138 419.5 if entity @a[distance=..20] run function upgrades:points/station
-execute positioned -386.5 138 419.5 as @a[distance=..2,tag=!up_one] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/three
+execute positioned -386.5 138 419.5 as @a[distance=..2,tag=!up_one] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/two
 execute positioned -386.5 138 419.5 as @a[distance=..2,tag=!up_one] at @s if block ~ ~-1 ~ bedrock run tag @s add up_one
 
 # jungle cyan dungeon
@@ -85,12 +85,12 @@ execute positioned 73.5 60 -967.5 as @a[distance=..2,tag=!up_sixteen] at @s if b
 
 # side view of cathedral
 execute positioned 177.5 133 -985.5 if entity @a[distance=..20] run function upgrades:points/station
-execute positioned 177.5 133 -985.5 as @a[distance=..2,tag=!up_seventeen] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/three
+execute positioned 177.5 133 -985.5 as @a[distance=..2,tag=!up_seventeen] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/two
 execute positioned 177.5 133 -985.5 as @a[distance=..2,tag=!up_seventeen] at @s if block ~ ~-1 ~ bedrock run tag @s add up_seventeen
 
 # begginings and ends
 execute positioned 242.5 186 -617.5 if entity @a[distance=..20] run function upgrades:points/station
-execute positioned 242.5 186 -617.5 as @a[distance=..2,tag=!up_eighteen] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/three
+execute positioned 242.5 186 -617.5 as @a[distance=..2,tag=!up_eighteen] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/two
 execute positioned 242.5 186 -617.5 as @a[distance=..2,tag=!up_eighteen] at @s if block ~ ~-1 ~ bedrock run tag @s add up_eighteen
 
 # cyanyellow wall
@@ -135,7 +135,7 @@ execute positioned 73.5 153 -993.5 as @a[distance=..2,tag=!up_26] at @s if block
 
 # boatrace first place
 execute positioned -352.5 96 -1560.5 if block ~ ~-1 ~ bedrock if entity @a[distance=..20] run function upgrades:points/station
-execute positioned -352.5 96 -1560.5 as @a[distance=..2,tag=!up_27] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/one
+execute positioned -352.5 96 -1560.5 as @a[distance=..2,tag=!up_27] at @s if block ~ ~-1 ~ bedrock run function upgrades:points/two
 execute positioned -352.5 96 -1560.5 as @a[distance=..2,tag=!up_27] at @s if block ~ ~-1 ~ bedrock run tag @s add up_27
 
 # boatrace second place

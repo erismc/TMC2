@@ -20,7 +20,7 @@ function custitems:lightbringer/sched
 execute as @a if score @s ohtrack matches 1 at @s run function custitems:feather/sched
 # armoured cargo - mole_oh:2
 execute as @a[scores={ohtrack=2}] at @s run function custitems:offhands/lowhp/health_check
-execute as @a[tag=armoured_cargo] unless entity @s[tag=NoArmour] run attribute @s generic.armor base set 10
+execute as @a[tag=armoured_cargo] unless entity @s[tag=NoArmour] run attribute @s generic.armor base set 6
 execute as @a[tag=!armoured_cargo] unless entity @s[tag=NoArmour] run attribute @s generic.armor base set 0
 execute as @a[tag=armoured_cargo] unless entity @s[tag=NoArmour] run tag @s remove armoured_cargo
 # AOE trident - mole_oh:3 (commands at the top)
@@ -31,10 +31,15 @@ execute as @a[scores={ohtrack=5}] at @s run function custitems:offhands/jumper/s
 # flint and steel - mole_oh:6 - that sets nearby mobs on fire on kill
 execute as @a[scores={ohtrack=6,mobderer=1}] at @s run function custitems:offhands/firestarter/sched
 # illuminating blaze rod - mole_oh:7
-execute as @a at @s if score @s ohtrack matches 7 run scoreboard players set @s mole_nv 2
-execute as @a[scores={mole_nv=2}] run effect give @s night_vision 20 0 true
-execute as @a[scores={mole_nv=1}] run effect clear @s night_vision
-execute as @a[scores={mole_nv=1..}] run scoreboard players remove @s mole_nv 1
+execute if score $lamps mole_nv matches 1.. if score $prng prngfive matches 5..15 unless score $prng prngfive matches 6..14 run function custitems:cw_lantern/kill
+execute as @a[scores={ohtrack=7}] at @s run function custitems:cw_lantern/summon
+
+
+
+# execute as @a at @s if score @s ohtrack matches 7 run scoreboard players set @s mole_nv 2
+# execute as @a[scores={mole_nv=2}] run effect give @s night_vision 20 0 true
+# execute as @a[scores={mole_nv=1}] run effect clear @s night_vision
+# execute as @a[scores={mole_nv=1..}] run scoreboard players remove @s mole_nv 1
 # slowfall phantom membrane - mole_oh:8
 execute as @a[scores={ohtrack=8}] run effect give @s slow_falling 1 0 false
 execute as @a[scores={ohtrack=8}] at @s if block ~ ~-0.5 ~ air positioned ~ ~-0.5 ~ run function custitems:offhands/cloud/particles

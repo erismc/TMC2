@@ -1,3 +1,6 @@
+# teleport players out of the nether
+execute if score $start tptrack matches 1 as @a[distance=..1000] in overworld run tp @s 37 14 42
+
 # sets all players in the nether from survival to adventure
 execute as @a[gamemode=survival,distance=..500] run gamemode adventure @s
 
